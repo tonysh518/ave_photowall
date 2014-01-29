@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 6]>
+    <link href="css/style_ie6.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+</head>
+<body id="">
+<div class="page">
+    <ul class="nav">
+        <li class="nav1"><a href="index.html">活动首页</a></li>
+        <li class="nav2"><a href="rule.html">活动规则</a></li>
+        <li class="nav3"><a href="rank.html">微博排名</a></li>
+        <li class="nav4"><a href="#">联系我们</a></li>
+        <li class="nav5"></li>
+    </ul>
+    <div class="pagetitle"><h1>写微博织围脖</h1></div>
+    <div class="pagesubhead"><h2>赋予情人节更多快乐</h2></div>
+    <div class="introduce"><p>怎样将微博发言实时编织成围脖？<br />2月8日至2月14日   Lily为您打成所愿！</p><a class="learnMore" href="rule.html">了解更多</a></div>
+    <div class="videobg">
+        <div class="videobox">
+            <object id="player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="478" height="252">
+                <param name="allowScriptAccess" value="always"/>
+                <param name="movie" value="video/player.swf"/>
+                <param name="flashVars" value="source=hourse.mp4&skinMode=show&fengmian=video/videodemo.jpg"/>
+                <param name="quality" value="high"/>
+                <param name="allowFullScreen" value="true"/>
+                <embed name="player" src="video/player.swf" allowFullScreen="true" flashVars="source=hourse.mp4&skinMode=show&fengmian=video/videodemo.jpg" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="478" height="252" allowScriptAccess="always"></embed>
+            </object>
+        </div>
+    </div>
+    <div class="totalCount">当前已有<span id="totalCountText"></span>人定制围脖</div>
+
+    <div class="steps">
+
+        <div class="step stepLogin">
+            <div class="stepLoginBtn" data-a="weibo_login"></div>
+            <div class="stepLoginTerm" data-a="agree_term"><span></span></div>
+            <div class="stepLoginError">请阅读用户协议条款</div>
+        </div>
+
+        <div class="step stepWaitApprove" id="stepWaitApprove"></div>
+
+        <div class="step stepProduced" id="stepProduced"></div>
+
+        <div class="step step1">
+            <div class="step1Title"></div>
+            <div class="step1Left">
+                <input id="val_word" class="step1Input" type="text" />
+                <div class="step1Error">不能超过15个字喔！</div>
+                <div class="step1Intro"></div>
+            </div>
+            <div class="step1Right">
+                <div class="step1BtnNext step1BtnNextDisabled" data-a="submit_word"></div>
+            </div>
+        </div>
+
+        <div class="step step2">
+            <div class="step2Title"></div>
+            <div class="step2Styles">
+                <ul>
+                    <li>
+                        <img src="img/style_icon_1.gif" />
+                        <div class="selected"></div>
+                    </li>
+                    <li>
+                        <img src="img/style_icon_2.gif" />
+                        <div class="selected"></div>
+                    </li>
+                    <li>
+                        <img src="img/style_icon_3.gif" />
+                        <div class="selected"></div>
+                    </li>
+                </ul>
+                <input id="val_type" type="hidden" />
+            </div>
+            <div class="step2Btns">
+                <div class="step2BtnPrev" data-a="back_word"></div>
+                <div class="step2BtnNext step2BtnNextDisabled" data-a="submit_style"></div>
+            </div>
+        </div>
+
+
+        <div class="step step3">
+            <div class="step3Title"></div>
+            <div class="step3Preview">
+                <img id="step3PreviewImg" src="" />
+                <input id="val_image" type="hidden" />
+            </div>
+            <div class="step3Btns">
+                <div class="step3BtnPrev" data-a="back_style"></div>
+                <div class="step3BtnNext" data-a="submit_post"></div>
+            </div>
+        </div>
+
+        <div class="step step4">
+            <div class="user" id="myRank">
+
+            </div>
+        </div>
+
+        <div class="step_loading">
+            <div class="waiting"></div>
+        </div>
+    </div>
+
+
+    <div class="listHD"></div>
+    <div class="list">
+        <div id="list_wrap"></div>
+        <!--  -->
+        <a href="rank.html" class="list_more"></a>
+    </div>
+</div>
+
+<!-- Template -->
+<!-- list-item-tpl -->
+<script type="text/tpl" id="list-item-template">
+    <div class="list_item cs-clear">
+        <div class="list_user">
+            <div class="list_pho"><a href="http://weibo.com/{{user.sns_uid}}" target="_blank"><img src="{{user.avatar}}" width="59" /></a></div>
+            <div class="list_name"><a href="http://weibo.com/{{user.sns_uid}}" target="_blank">{{user.screen_name}}</a></div>
+            <div class="list_rank">第 <span>{{s_rank}}</span> 名</div>
+        </div>
+        <div class="list_infor"><img width="530" src="api{{image}}" /></div>
+    </div>
+</script>
+<!-- #list-item-tpl -->
+
+<!-- login-iframe-tpl -->
+<script type="text/tpl" id="login-iframe-template">
+    <div class="overlay" data-a="close_popup"></div>
+    <div id="weiboLoginForm" class="popup">
+        <div class="close" data-a="close_popup"></div>
+        <iframe frameborder="0" scrolling="no" width="650" height="350" src="{{url}}" />
+    </div>
+</script>
+<!-- #login-iframe-tpl -->
+
+<!-- login-iframe-tpl -->
+<script type="text/tpl" id="popup-dmx-template">
+    <div class="overlay" data-a="close_popup"></div>
+    <div id="popup-dmx" class="popup">
+        <div class="close" data-a="close_popup"></div>
+        {{#if direction}}
+        <div class="title_{{direction}}"></div>
+        <div class="rank">您的排名{{direction_text}}了{{offset}}位，目前排在{{newRank}}位</div>
+        {{else}}
+        <div class="errorMsg">您今天已经赌三把了，明天再来吧！</div>
+        {{/if}}
+        <div class="backBtn" data-a="close_popup"></div>
+    </div>
+</script>
+<!-- #login-iframe-tpl -->
+
+<!-- myrank-tpl -->
+<script type="text/tpl" id="myrank-template">
+    <div class="userRank">
+        <div class="userSeatWrap">
+            <div class="userSeat" style="left:{{position}}%"></div>
+        </div>
+        <div class="userLast">第<span>1</span>名</div>
+        <div class="userFirst">第<span>{{total}}</span>名</div>
+    </div>
+    <div class="userForm cs-clear">
+        <div class="userPho"><img src="{{user.avatar}}" width="104" /></div>
+        <div class="userWeibo">
+            <div class="myRank">
+                <div class="name">Hi,{{user.screen_name}}</div>
+                <div class="rank">您的当前排名为 <span>{{rank}}</span> 名</div>
+            </div>
+            <div class="step4Preview"><img width="456" src="{{image}}" /></div>
+        </div>
+    </div>
+    <div class="step4gift"></div>
+    <div class="step4BtnDMX" data-a="submit_dmx"></div>
+    <div class="step4BtnInvite" data-a="submit_friends"></div>
+</script>
+<!-- #myrank-tpl -->
+
+<!-- preview-tpl -->
+<script type="text/tpl" id="preview-template">
+    <div class="preview"><img src="{{image}}" /></div>
+</script>
+<!-- #preview-tpl -->
+
+<!-- friends-list-tpl -->
+<script type="text/tpl" id="popup-friends-template">
+    <div class="overlay" data-a="close_popup"></div>
+    <div id="popupFriends" class="popup">
+        <div class="close" data-a="close_popup"></div>
+        <div class="friendStatus">已经邀请了<span id="invitedNum">{{invitedNum}}</span>位好友，还可以邀请<span id="leftNum">{{leftNum}}</span>位</div>
+        <div class="search"><input placeholder="输入好友名称" type="text" class="keyword" /><div class="searchBtn" data-a="searchFriend"></div></div>
+        <ul id="friendsList"></ul>
+        <ul id="friendsPaginate"></ul>
+        <div id="inviteText">写微博织围脖真开心啊～你也快来啊！</div>
+        <div class="inviteBtn" data-a="invite_friends"></div>
+    </div>
+</script>
+<!-- #friends-list-tpl -->
+
+<!-- friend-item-tpl -->
+<script type="text/tpl" id="friend-item-template">
+    {{#if invited}}
+    <li data-snsuid="{{id}}" data-name="{{screen_name}}" class="disabled">
+        <div class="avatar"><img src="{{profile_image_url}}" /></div>
+        <div class="screen_name">{{screen_name}}</div>
+    </li>
+    {{else}}
+    <li data-snsuid="{{id}}" data-name="{{screen_name}}" data-a="add_friend">
+        <div class="avatar"><img src="{{profile_image_url}}" /></div>
+        <div class="screen_name">{{screen_name}}</div>
+        <div class="checkbox"></div>
+    </li>
+    {{/if}}
+</script>
+<!-- #friend-item-tpl -->
+
+<!-- paginate-tpl -->
+<script type="text/tpl" id="paginate-template">
+    <li data-a="change_friend_page">{{pagenum}}</li>
+</script>
+<!-- #paginate-tpl -->
+
+<!-- login-iframe-tpl -->
+<script type="text/tpl" id="popup-invited-template">
+    <div class="overlay" data-a="close_popup"></div>
+    <div id="popup-invited" class="popup">
+        <div class="close" data-a="close_popup"></div>
+        <div class="invitedText"></div>
+        <div class="backBtn" data-a="close_popup"></div>
+    </div>
+</script>
+<!-- #login-iframe-tpl -->
+
+<!-- Template -->
+
+
+<script type="text/javascript" src="js/plugin/modernizr-2.5.3.min.js"></script>
+<script type="text/javascript" src="js/sea/sea-debug.js" data-config="../config"></script>
+<script type="text/javascript" src="js/sea/plugin-shim.js"></script>
+<script type="text/javascript" src="js/lp.core.js"></script>
+<script type="text/javascript" src="js/lp.base.js"></script>
+</body>
+</html>

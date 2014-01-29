@@ -1,0 +1,2 @@
+2014/01/29 18:23:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'avene_photowall.photo' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Photo`.
+in /Applications/MAMP/htdocs/avene_photowall/api/index.php (13)
