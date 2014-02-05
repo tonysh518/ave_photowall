@@ -4,6 +4,7 @@
 LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
     var API_ROOT = "api";
     var submitting = false;
+    var isIe6 = $.browser.msie && $.browser.version < 7;
 
     // live for pic-item hover event
     $(document.body)
@@ -15,24 +16,6 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             $('.step2BtnNext').removeClass('step2BtnNextDisabled');
             $('#val_type').val(index+1);
         })
-        .delegate('#val_word' , 'keyup' , function(e){
-            var word = $(this).val();
-            var wordLenth = word.length;
-            if(wordLenth > 15) {
-                $('.step1Error').fadeIn();
-            }
-            if(wordLenth > 0 && wordLenth < 16) {
-                $('.step1BtnNext').removeClass('step1BtnNextDisabled');
-                $('.step1Error').fadeOut();
-            }else{
-                $('.step1BtnNext').addClass('step1BtnNextDisabled');
-                return false;
-            }
-            if (e.which == 13 ) {
-                e.preventDefault();
-                LP.triggerAction('submit_word');
-            }
-        })
         .delegate('.keyword' , 'keyup' , function(e){
             if (e.which == 13 || $(this).val().length == 0) {
                 e.preventDefault();
@@ -40,378 +23,250 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             }
         })
 
+    var nodeActions = {
+        // when current dom is main , and the recent ajax param orderby is 'like' or
+        // 'random' , the datetime would not be showed.
+        // pageParm.orderby == 'like' || pageParm.orderby == 'random' 此时不显示日历
+        inserNode: function( $dom , nodes ){
+            var aHtml = [];
+            var lastDate = null;
+            //var pageParm = $main.data('param'); //TODO:  pageParm.orderby == 'like' || pageParm.orderby == 'random' 此时不显示日历
+            nodes = nodes || [];
+
+            // save nodes to cache
+            var cache = $dom.data('nodes') || [];
+            $dom.data('nodes' , cache.concat( nodes ) );
+
+            $.each( nodes , function( index , node ){
+                node.thumb = node.image.replace('.jpg','_thumb.jpg');
+                LP.compile( 'node-item-template' ,
+                    node ,
+                    function( html ){
+                        aHtml.push( html );
+                        if( index == nodes.length - 1 ){
+                            // render html
+                            $dom.append(aHtml.join(''));
+                            $dom.find('.photo_item:not(.reversal)').css({'opacity':0});
+                            //nodeActions.setItemWidth( $dom );
+                            nodeActions.setItemReversal( $dom );
+                        }
+                    } );
+
+            } );
+        },
+        // start pic reversal animation
+        setItemReversal: function( $dom ){
+            // fix all the items , set position: relative
+            $dom.children()
+                .css('position' , 'relative');
+            // get first time item , which is not opend
+            // wait for it's items prepared ( load images )
+            // run the animate
+
+            // if has time items, it means it needs to reversal from last node-item element
+            // which is not be resersaled
+            var $nodes = $dom.find('.photo_item:not(.reversal)');
+
+            var startAnimate = function( $node ){
+                $node.css({opacity:0}).addClass('reversal').animate({opacity:1}, 1000);
+                setTimeout(function(){
+                    nodeActions.setItemReversal( $dom );
+                } , 100);
+            }
+            // if esist node , which is not reversaled , do the animation
+            if( $nodes.length ){
+                startAnimate( $nodes.eq(0) );
+            }
+        }
+    }
 
 
+    $(window).resize(function(){
+        var $symj_popup = $('.symj_popup');
+        if($symj_popup.length == 0) return;
+        var $img = $('.symj_popup .symj_img img');
+        var imgWidth = $img.width();
+        var imgHeight = $img.height();
+        var winWidth = $(window).width();
+        var winHeight = $(window).height();
+        var maxHeight = winHeight - 130;
+        var maxWidth = winWidth - 50;
+        if(imgHeight > maxHeight) {
+            imgHeight = maxHeight;
+        }
+        if(winWidth <= 640)
+        {
+            imgHeight = imgHeight * 1.5;
+            imgWidth = imgWidth * 1.5;
+            $img.height(imgHeight).width(imgWidth);
+            $symj_popup.css({width:imgWidth});
+            var boxHeight = $symj_popup.height()+50;
+            $symj_popup.css({'margin-top':-boxHeight/2, 'margin-left':-(imgWidth/2)-20});
+        }
+        else
+        {
+            $img.height(imgHeight).width('auto');
+            imgWidth = $img.width();
+            $symj_popup.css({width:imgWidth});
+            var boxHeight = $symj_popup.height()+50;
+            $symj_popup.css({'margin-top':-boxHeight/2, 'margin-left':-imgWidth/2});
+        }
+    });
+
+    $(document).keydown(function( ev ){
+        var $popup = $('.symj_popup_wrap');
+        if( !$popup.is(':visible') ) return;
+        switch( ev.which ){
+            case 37: // left
+                LP.triggerAction('prev');
+                break;
+            case 39: // right
+                LP.triggerAction('next');
+                break;
+            case 27: // esc
+                LP.triggerAction('close_pop');
+                break;
+        }
+    });
 
     // ================== page actions ====================
-    LP.action('submit_word' , function(){
-        if($(this).hasClass('step1BtnNextDisabled')) {
-            return false;
-        }
-        $('.step1').fadeOut();
-        $('.step2').delay(510).fadeIn();
-    });
+    // get default nodes
 
-    LP.action('back_word' , function( ){
-        $('.step2').fadeOut();
-        $('.step1').delay(510).fadeIn();
-    });
-
-    LP.action('submit_style' , function( ){
-        if($(this).hasClass('step2BtnNextDisabled')) {
-            return false;
+    var _currentNodeIndex = 0;
+    var $loading = $('.symj_box2_loading');
+    LP.action('list', function(){
+        pagenum = 15;
+        if($('.symj_preview').length == 1) {
+            pagenum = 12;
         }
-        $('.step_loading').fadeIn();
-        var data = {
-            content: $('#val_word').val(),
-            style: $('#val_type').val()
-        }
-        api.ajax('getimage', data, function(res){
-            $('.step_loading').stop().fadeOut();
-            $('.step2').fadeOut();
-            $('.step3').delay(510).fadeIn();
-            $('#step3PreviewImg').attr('src', API_ROOT + res.image);
-            $('#val_image').val(res.image);
-        }, function(){
-            setTimeout(function(){
-                $('.step_loading').stop().fadeOut();
-            },200);
+        var pageParam = {page:1,pagenum:pagenum};
+        $('#symj_list').data('param',pageParam);
+        api.ajax('list', pageParam, function( result ){
+            $loading.fadeOut();
+            nodeActions.inserNode( $('#symj_list') , result.data );
         });
     });
 
-    LP.action('back_style' , function( ){
-        $('.step3').fadeOut();
-        $('.step2').delay(510).fadeIn();
-    });
 
-    LP.action('submit_post' , function( ){
-        $('.step3').fadeOut();
-        $('.step4').delay(510).fadeIn();
-        $('.step_loading').fadeIn();
-        var data = {
-            content: $('#val_word').val(),
-            style: $('#val_type').val(),
-            image: $('#val_image').val()
-        }
-        api.ajax('post', data, function(res){
-            $('.step_loading').stop().fadeOut();
-            res.data.image = API_ROOT + res.data.image;
-            LP.compile( 'preview-template' ,
-                res.data,
-                function( html ){
-                    $('#stepWaitApprove').append(html);
-                    $('.stepWaitApprove').fadeIn();
-                });
-        }, function(){
-            setTimeout(function(){
-                $('.step_loading').stop().fadeOut();
-            },200);
-        });
-    });
+    LP.action('node', function(){
+        _currentNodeIndex = $(this).prevAll().length;
+        var nodes = $('#symj_list').data('nodes');
+        var node = nodes[ _currentNodeIndex ];
+        LP.compile( 'node-zoom-template' , node , function( html ){
 
-    LP.action('submit_dmx' , function( ){
-        if(submitting) {
-            return false;
-        }
-        submitting = true;
-        api.ajax('dmx', function(res){
-            submitting = false;
-            if(res.error) {
-                data = {};
-            }
-            else {
-                if(res.data.offset > 0) {
-                    res.data.direction = 'up';
-                    res.data.direction_text = '上升';
-                } else {
-                    res.data.direction = 'down';
-                    res.data.direction_text = '下降';
+            $('body').append(html);
+            var $symj_popup = $('.symj_popup').css('opacity',0);
+            var $img = $('.symj_popup .symj_img img');
+            $img.ensureLoad(function(){
+                $(window).trigger('resize');
+                if(isIe6) {
+                    var top = $(window).scrollTop() +  $(window).height()/2;
                 }
-                res.data.offset = Math.abs(res.data.offset);
-                data = res.data;
-            }
-
-            LP.compile( 'popup-dmx-template' ,
-                data,
-                function( html ){
-                    $('body').append(html);
-                    $('#popup-dmx').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
-                });
-
-            var myRank = $('#myRank').data('user');
-            myRank.rank = res.data.newRank;
-            $('#myRank').data('user', myRank);
-            myRank.position = parseInt(((myRank.rank-1) / myRank.total)*100);
-            if(myRank.total == myRank.rank) {
-                myRank.position = 100
-            }
-            LP.compile( 'myrank-template' ,
-                myRank,
-                function( html ){
-                    $('#myRank').html(html);
-                });
-
+                else {
+                    top = '50%';
+                }
+                $symj_popup.animate({opacity:1,top:top},800,'easeOutQuart');
+            });
         });
     });
 
-    LP.action('submit_friends' , function( ){
-        if(submitting) {
-            return false;
-        }
-        submitting = true;
-        api.ajax('invitedfriends', function(res){
-            var invitedFriends = [];
-            $.each(res.data, function(index, item){
-                invitedFriends.push(item.friend_sns_uid);
-            });
-            $('#friendsList').data('invited', invitedFriends);
-
-            submitting = false;
-            var invitedNum = res.data.length;
-            LP.compile( 'popup-friends-template', {invitedNum:invitedNum, leftNum: 20-invitedNum},
-                function( html ){
-                    $('body').append(html);
-                    $('#popupFriends').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
-                    // Load Friends List
-                    api.ajax('friends', function(res){
-                        var pagenum = Math.ceil(res.data.users.length / 8);
-                        for(var i = 1; i <= pagenum; i ++)
-                        {
-                            LP.compile( 'paginate-template' ,
-                                {pagenum: i},
-                                function( html ){
-                                    $('#friendsPaginate').append(html);
-                                } );
-                        }
-                        $('#friendsPaginate li').eq(0).addClass('on');
-                        $('#friendsList').fadeIn().data('friends', res.data.users);
-                        var allFriends = res.data.users.slice();
-                        var friends = allFriends.splice(0,8);
-                        $.each(friends, function(index, item){
-                            if($.inArray(item.idstr, invitedFriends) != -1){
-                                item.invited = true;
-                            }
-                            LP.compile( 'friend-item-template' ,
-                                item,
-                                function( html ){
-                                    $('#friendsList').append(html);
-                                } );
-                        })
+    //for next action
+    LP.action('next' , function( data ){
+        _currentNodeIndex++;
+        var nodes = $('#symj_list').data('nodes');
+        var node = nodes[ _currentNodeIndex ];
+        if( node ){
+            $('.symj_popup').animate({left:'150%'},400,'easeInQuart',function(){
+                $(this).remove();
+                LP.compile( 'node-zoom-template' , node , function( html ){
+                    $('.symj_popup_wrap').append($(html).find('.symj_popup'));
+                    var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'-50%', 'opacity':0});
+                    var $img = $('.symj_popup .symj_img img');
+                    $img.ensureLoad(function(){
+                        $(window).trigger('resize');
+                        $symj_popup.animate({opacity:1, left:'50%'},300,'easeOutQuart');
                     });
                 });
-        });
-
-    });
-
-    LP.action('change_friend_page', function(){
-        var paginateItems = $('#friendsPaginate li');
-        var index = $.inArray(this, paginateItems);
-        var allFriends = $('#friendsList').data('friends').slice();
-        var friends = allFriends.splice(index*8, 8);
-        paginateItems.removeClass('on');
-        $(this).addClass('on');
-        $('#friendsList').fadeOut(function(){
-            $(this).empty();
-            $.each(friends, function(index, item){
-                LP.compile( 'friend-item-template' ,
-                    item,
-                    function( html ){
-                        $('#friendsList').append(html);
-                    } );
-            })
-            $(this).fadeIn();
-        });
-    });
-
-    LP.action('searchFriend', function(){
-        var allFriends = $('#friendsList').data('friends');
-        var keyword = $('#popupFriends .keyword').val();
-        if(!keyword) {
-            $('#friendsPaginate').fadeIn();
-            $('#friendsPaginate li').eq(0).click();
-            return;
+            });
         }
-        $('#friendsPaginate').fadeOut();
-        $('#friendsList').fadeOut(function(){
-            $(this).empty();
-            $.each(allFriends, function(index, item){
-                if(item.screen_name.indexOf(keyword) != -1) {
-                    LP.compile( 'friend-item-template' ,
-                        item,
-                        function( html ){
-                            $('#friendsList').append(html);
-                        } );
-                }
-
-            })
-            $(this).fadeIn();
-        });
     });
 
-    LP.action('add_friend', function(){
-        var name = $(this).data('name');
-        var snsuid = $(this).data('snsuid');
-        var textarea = $('#inviteText');
-        var newTxt;
-        var invitedNum = parseInt($('#invitedNum').html());
-        if($(this).hasClass('selected')) {
-            var selected = $('#friendsList').data('selected');
-            var index = $.inArray(snsuid,selected);
-            selected.splice(index, 1);
-            $('#friendsList').data('selected',selected);
-            newTxt = textarea.html().replace(' @'+name, '');
-            textarea.html(newTxt);
-            $(this).removeClass('selected');
-            invitedNum --;
-        }
-        else {
-            if(invitedNum >= 20) {
-                return false;
-            }
-            newTxt = textarea.html() + " @"+name;
-            if(newTxt.length < 140) {
-                $(this).addClass('selected');
-                textarea.html(newTxt);
-                var selected = $('#friendsList').data('selected');
-                if(!selected) {
-                    selected = [];
-                }
-                selected.push(snsuid);
-                $('#friendsList').data('selected',selected);
-                invitedNum ++;
-            }
-        }
-        $('#invitedNum').html(invitedNum);
-        $('#leftNum').html(20-invitedNum);
-    });
-
-    LP.action('invite_friends', function(){
-        var friends = $('#friendsList').data('selected').toString();
-        var sharetext = $('#inviteText').html();
-        var data = {friends: friends, sharetext: sharetext};
-        api.ajax('invite', data, function(){
-            LP.compile( 'popup-invited-template' ,
-                {},
-                function( html ){
-                    $('body').append(html);
-                    $('#popup-invited').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
+    //for prev action
+    LP.action('prev' , function( data ){
+        _currentNodeIndex--;
+        var nodes = $('#symj_list').data('nodes');
+        var node = nodes[ _currentNodeIndex ];
+        if( node ){
+            $('.symj_popup').animate({left:'-50%'},400,'easeInQuart',function(){
+                $(this).remove();
+                LP.compile( 'node-zoom-template' , node , function( html ){
+                    $('.symj_popup_wrap').append($(html).find('.symj_popup'));
+                    var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'150%', 'opacity':0});
+                    var $img = $('.symj_popup .symj_img img');
+                    $img.ensureLoad(function(){
+                        $(window).trigger('resize');
+                        $symj_popup.animate({opacity:1, left:'50%'},300,'easeOutQuart');
+                    });
                 });
-        }, function(){
+            });
+        }
+    });
+
+
+    LP.action('close_pop', function(){
+        $('.symj_popup').animate({top:'-50%'},500,'easeInQuart');
+        $('.symj_overlay').fadeOut(500, function(){
+            $('.symj_popup_wrap').remove();
         });
-        LP.triggerAction('close_popup');
-
-
     });
 
-    LP.action('weibo_login' , function(){
-        if(!$('.stepLoginTerm span').hasClass('checked')) {
-            $('.stepLoginError').fadeIn();
-            return false;
-        }
-        var iframeData = {url:$(this).data('url')};
-        LP.compile( 'login-iframe-template' ,
-            iframeData,
-            function( html ){
-                $('body').append(html);
-                $('#weiboLoginForm').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
-            } );
+    LP.action('load_more', function(){
+        $loading.fadeIn();
+        var pageParam = $('#symj_list').data('param');
+        pageParam.page ++;
+        $('#symj_list').data('param',pageParam);
+        api.ajax('list', pageParam, function( result ){
+            $loading.fadeOut();
+            nodeActions.inserNode( $('#symj_list') , result.data );
+        });
     });
 
-    LP.action('agree_term', function(){
-        var checkbox = $(this).find('span');
-        if(checkbox.hasClass('checked')) {
-            checkbox.removeClass('checked');
-        }
-        else {
-            checkbox.addClass('checked');
-            $('.stepLoginError').fadeOut();
-        }
-    });
-
-    LP.action('close_popup' , function(){
-        $('.popup').fadeOut(1500,function(){
-            $(this).remove();
-        }).dequeue().animate({top:'-50%'}, 800, 'easeInOutElastic');
-        $('.overlay').fadeOut(1500,function(){
-            $(this).remove();
+    LP.action('winner_list', function(){
+        api.ajax('winnerList', function( result ){
+            var thismonth = result.data.slice(0,1);
+            LP.compile( 'winner-thismonth-template' , thismonth[0] , function( html ){
+                $('.symj_winner_this_month').append(html);
+            });
+            var othermonth = {};
+            othermonth.winners = result.data.slice(1);
+            LP.compile( 'winner-othermonth-template' , othermonth , function( html ){
+                $('.symj_winner_list').append(html);
+            });
         });
     });
 
     var init = function(){
-        //Get Rank List
-        var dataList = {page:1, pagenum: 5};
-        api.ajax('list', dataList, function(res){
-            var items = res.data;
-            $('#totalCountText').html(res.total);
-            $.each( items , function( index , item ){
-                LP.compile( 'list-item-template' ,
-                    item,
-                    function( html ){
-                        // render html
-                        $('#list_wrap').append(html);
-                    } );
-            });
-        }, function(){
-            $('#list_wrap').html('加载失败，请刷新页面再试一次。');
-        });
+        if($('#symj_list').length) {
+            LP.triggerAction('list');
+        }
 
-        //Get User Status
-        api.ajax('myrank', function(res){
-            if(res.error == 1001) {
-                $('.stepLogin').fadeIn();
-                $('.stepLoginBtn').data('url',res.url);
-            }
-            else {
-                if(res.data.status ==  undefined) {
-                    $('.step1').fadeIn();
-                }
-                switch(res.data.status) {
-                    case 0:
-                        res.data.image = API_ROOT + res.data.image;
-                        LP.compile( 'preview-template' ,
-                            res.data,
-                            function( html ){
-                                $('#stepWaitApprove').append(html);
-                                $('.stepWaitApprove').fadeIn();
-                            });
-                        break;
-                    case 1:
-                        if(res.data.rank) {
-                            $('#myRank').data('user',res.data);
-                            $('.step4').fadeIn();
-                            $('.steps').addClass('steps_high');
-                            res.data.image = API_ROOT + res.data.image;
-                            res.data.position = parseInt(((res.data.rank-1) / res.data.total)*100);
-                            if(res.data.total == res.data.rank) {
-                                res.data.position = 100
-                            }
-                            LP.compile( 'myrank-template' ,
-                                res.data,
-                                function( html ){
-                                    $('#myRank').append(html);
-                                });
-                        }
-                        break;
-                    case 2:
-                        break;
-                    case 3:
-                        res.data.image = API_ROOT + res.data.image;
-                        LP.compile( 'preview-template' ,
-                            res.data,
-                            function( html ){
-                                $('#stepProduced').append(html);
-                                $('.stepProduced').fadeIn();
-                            });
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }, function(){
-
-        });
+        if($('.symj_winner_banner').length) {
+            LP.triggerAction('winner_list');
+        }
     }
 
     init();
 
+
+    jQuery.fn.extend({
+        ensureLoad: function(handler) {
+            return this.each(function() {
+                if(this.complete) {
+                    handler.call(this);
+                } else {
+                    $(this).load(handler);
+                }
+            });
+        }
+    });
 });

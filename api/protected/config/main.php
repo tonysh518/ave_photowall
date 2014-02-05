@@ -16,6 +16,8 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.validators.*',
+		'ext.easyimage.EasyImage',
 	),
 
 	'modules'=>array(
@@ -89,5 +91,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'adminWeiboUid'=>'1856415417'
 	),
 );

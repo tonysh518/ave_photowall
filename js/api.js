@@ -22,15 +22,8 @@ define(function( require , exports , model ){
     //      needLogin: {boolean} 是否需要登录
     // 配置
     var _api = {
-        // searchHosts: {path: '/Ajax/searchHosts' , data: {key: ''} , m: '检索小组' , method: 'get' },
-        getimage: {path: 'api/index.php/scarf/getimage', method:'post'},
-        post: {path: 'api/index.php/scarf/post', method:'post'},
-        dmx: {path: 'api/index.php/scarf/dmx', method:'get'},
-        list: {path: 'api/index.php/scarf/ranklist', method:'get'},
-        myrank: {path: 'api/index.php/scarf/myrank', method:'get'},
-        friends: {path: 'api/index.php/user/getfriendlist', method:'get'},
-        invite: {path: 'api/index.php/scarf/invite', method:'post'},
-        invitedfriends: {path: 'api/index.php/scarf/getinvitedfriends', method:'get'}
+        list: {path: 'api/index.php/photo/list', method:'get'},
+        winnerList: {path: 'api/index.php/winner/list', method:'get'}
     };
 
     // 内部API

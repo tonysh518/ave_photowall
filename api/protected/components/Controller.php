@@ -20,4 +20,41 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+
+	// 辅助方法
+	public function isPost() {
+		return Yii::app()->getRequest()->isPostRequest;
+	}
+
+	public function isPut() {
+		return Yii::app()->getRequest()->isPutRequest;
+	}
+
+	public function responseError($message) {
+		$this->_renderjson($this->wrapperDataInRest(NULL, $message, TRUE));
+	}
+
+	public function responseJSON($data, $message, $ext = array()) {
+		$this->_renderjson($this->wrapperDataInRest($data, $message, FALSE, $ext));
+	}
+
+	public function wrapperDataInRest($data, $message = '', $error = FALSE, $ext = array()) {
+		$json = array(
+			"success" => !$error,
+			"message" => $message,
+			"data" => $data
+		);
+
+		if (!empty($ext)) {
+			$json += $ext;
+		}
+
+		return $json;
+	}
+
+	private function _renderjson($data) {
+		header("Content-Type: application/json; charset=UTF-8");
+		print CJavaScript::jsonEncode($data);
+		die();
+	}
 }

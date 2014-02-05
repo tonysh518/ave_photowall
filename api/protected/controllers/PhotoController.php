@@ -2,11 +2,20 @@
 
 class PhotoController extends Controller
 {
+
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/column2';
+
+	public function init() {
+		Yii::import("application.vendor.*");
+	}
+
+	public function getRole() {
+		return Yii::app()->session['user_role'];
+	}
 
 	/**
 	 * @return array action filters
@@ -28,7 +37,7 @@ class PhotoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','list','fetch','post','ChangeStatus','GetStatistics','Search'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -43,6 +52,180 @@ class PhotoController extends Controller
 				'users'=>array('*'),
 			),
 		);
+	}
+
+
+	public function actionList()
+	{
+		$request = Yii::app()->getRequest();
+		$page = $request->getParam("page");
+		if (!$page) {
+			$page = 1;
+		}
+		$pagenum = $request->getParam("pagenum");
+		if (!$pagenum) {
+			$pagenum = 10;
+		}
+		$status = $request->getParam("status");
+		if (!isset($status)) {
+			$status = 1;
+		}
+		$photo = new Photo();
+		$criteria=new CDbCriteria;
+		if(1) {
+			$criteria->select='*';
+		}
+		else {
+			$criteria->select='pid,image,content,datetime';
+		}
+		if($status != 'all' && $this->getRole() == 2) {
+			$criteria->condition='status=:status';
+			$criteria->params=array(':status'=>$status);
+		}
+		$criteria->limit = $pagenum;
+		$criteria->offset = ($page - 1 ) * $pagenum;
+		$criteria->order = 'datetime DESC';
+		$photos = $photo->findAll($criteria);
+
+		$retdata = array();
+		foreach($photos as $photo) {
+			$data = $photo->attributes;
+			unset($data['avatar']);
+			unset($data['sns_uid']);
+			if($this->getRole() != 2) {
+				unset($data['status']);
+				unset($data['screen_name']);
+			}
+			unset($data['weibo_id']);
+			$retdata[] = $data;
+		}
+
+		$this->responseJSON($retdata, "success");
+	}
+
+	public function actionPost() {
+		if($this->isPost()){
+			if(Yii::app()->session['is_login']) {
+				$request = Yii::app()->getRequest();
+				$photoUpload = CUploadedFile::getInstanceByName("photo");
+				$description = $request->getPost('description');
+				if ($photoUpload) {
+					$mime = $photoUpload->getType();
+					$allowMime = array(
+						"image/gif", "image/png", "image/jpeg", "image/jpg"
+					);
+					if (!in_array($mime, $allowMime)) {
+						return $this->responseError("photo's media type is not allowed");
+					}
+					else
+					{
+						$dir = ROOT_PATH."/upload/tmp/";
+						if (!is_dir($dir)) {
+							mkdir($dir, 0777, TRUE);
+						}
+						$filename = uniqid().'_'.time().'.'.$photoUpload->extensionName;
+						$to = $dir."/". $filename;
+						$ret = $photoUpload->saveAs($to);
+						if($ret) {
+							$c = new SaeTClientV2(WB_AKEY, WB_SKEY, Yii::app()->session['weibo_access_token']);
+							//TODO: Change the image url
+							$contents = $c->upload($description, 'http://ww4.sinaimg.cn/mw690/59209e01gw1ed6hevjpp9j20g60qo0vg.jpg');
+							if(isset($contents['error_code'])){
+								$this->responseError($contents);
+							}
+							unlink($to);
+						}
+					}
+				}
+				else {
+					return $this->responseError("not get photo");
+				}
+			}
+			else {
+				return $this->responseError("not login");
+			}
+		}
+		else {
+			return $this->responseError("not post");
+		}
+	}
+
+
+	public function actionChangeStatus() {
+		if($this->getRole() != 2) {
+			return;
+		}
+		$request = Yii::app()->getRequest();
+		$pid = $request->getPost('pid');
+		$status = $request->getPost('status');
+		$photo = Photo::model()->findByPk($pid);
+		$photo->status = $status;
+		$photo->save();
+		$this->responseJSON(1, "success");
+	}
+
+
+	public function actionFetch() {
+		$adminUid = Yii::app()->params['adminWeiboUid'];
+		$adminUser = User::model()->findByAttributes(array('sns_uid'=>$adminUid));
+		$access_token = $adminUser->access_token;
+		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
+		//TODO: Change to search hashtag api
+		$contents = $c->public_timeline();
+		if(isset($contents['error_code'])){
+			echo "The weibo access token is expired, please login again in back office.";
+			return;
+		}
+		Photo::model()->fetchContents($contents['statuses']);
+		echo "Finished :)";
+	}
+
+	public function actionGetStatistics()
+	{
+		if($this->getRole() != 2) {
+			return;
+		}
+		$statistics = Photo::model()->getStatistics();
+		return $this->responseJSON($statistics,'success');
+	}
+
+	public function actionSearch()
+	{
+		if($this->getRole() != 2) {
+			return;
+		}
+		$request = Yii::app()->getRequest();
+		$page = $request->getParam("page");
+		if (!$page) {
+			$page = 1;
+		}
+		$pagenum = $request->getParam("pagenum");
+		if (!$pagenum) {
+			$pagenum = 10;
+		}
+		$gender = $request->getParam("gender");
+		$username = $request->getParam("username");
+		$location = $request->getParam("location");
+
+		$criteria = new CDbCriteria();
+		$criteria->select = "*";
+		if($username) {
+			$criteria->addSearchCondition('screen_name', $username, TRUE);
+		}
+		if($location) {
+			$criteria->addSearchCondition('location', $location, TRUE);
+		}
+		if($gender) {
+			$criteria->addCondition('gender=:gender');
+			$criteria->params[':gender'] = $gender;
+		}
+		$criteriaCount = clone $criteria;
+		$criteria->limit = $pagenum;
+		$criteria->offset = ($page - 1 ) * $pagenum;
+		$criteria->order = 'datetime DESC';
+		$photos = Photo::model()->findAll($criteria);
+		$count = Photo::model()->count($criteriaCount);
+		return $this->responseJSON($photos,$count);
 	}
 
 	/**
