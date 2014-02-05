@@ -19,7 +19,7 @@ config(function($routeProvider,$httpProvider) {
 //    $routeProvider.when('/production/producing', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-producing.html', controller: 'ScarfCtrListProducing'});
 //    $routeProvider.when('/scarf/search/:keyword', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-all.html', controller: 'ScarfCtrSearch'});
 
-    $routeProvider.otherwise({redirectTo: '/photo/list/all'});
+    $routeProvider.otherwise({redirectTo: '/photo/list/0'});
 
 
     $httpProvider.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";

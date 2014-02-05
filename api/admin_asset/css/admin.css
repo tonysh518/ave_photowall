@@ -30,7 +30,7 @@ a:hover {color:#888;}
 .sub-nav {clear: both;margin:20px 0px 10px 0;float:left;}
 .sub-nav > li {margin:0 20px 0 0;}
 .sub-nav > li > a {padding:4px 8px;}
-.sub-nav li.active a,.sub-nav li.active a:focus {background:#aaa;}
+.sub-nav li.active a,.sub-nav li.active a:focus {background:#f58774;}
 
 .search {margin:0px 0 0 0px;height:100px;padding:20px 0 0;border-top:1px solid #eee;}
 .search .form-group {float:left;}

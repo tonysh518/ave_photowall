@@ -2,439 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83767be6-7aa8-4538-b8d9-26f38287270a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/css/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/img/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/img/icons-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/img/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/img/login_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/sinasdk/weibo_login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/controllers/AdminController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/extensions/easyimage/EasyImage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/extensions/easyimage/drivers/Image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/extensions/easyimage/drivers/Image_GD.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/extensions/easyimage/drivers/Image_Imagick.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/extensions/easyimage/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/views/layouts/admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/user/all.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/user/all.jsons" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-animate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-animate.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-animate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-cookies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-cookies.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-cookies.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-loader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-loader.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-loader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_af-na.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_af-za.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_am-et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_am.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-001.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-ae.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-bh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-dz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-eg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-iq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-jo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-kw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-lb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-ly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-om.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-qa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-sa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-sd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-sy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-tn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-ye.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bg-bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bn-bd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bn-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ca-ad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ca-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_cs-cz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_da-dk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-at.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-li.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-lu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_el-cy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_el-gr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-as.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-au.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-bb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-bm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-bw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-bz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-dsrt-us.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-dsrt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-fm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-gu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-gy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-hk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-ie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-iso.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-jm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-mh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-mp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-mt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-mu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-na.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-nz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-ph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-pk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-pr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-pw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-sg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-tc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-tt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-um.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-us.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-vg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-za.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-zw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-419.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-bo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-cl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-co.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-cr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-do.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-gq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-gt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-hn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-mx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ni.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-pa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-pe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-pr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-py.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-us.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-uy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ve.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_et-ee.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_eu-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fa-af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fa-ir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fi-fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fil-ph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-bf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-bi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-bj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-bl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-cd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-cf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-cg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ci.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-cm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-dj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ga.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-gf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-gn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-gp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-gq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-lu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-mc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-mf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-mg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-mq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-re.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-yt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gl-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gsw-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gsw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gu-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_he-il.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hi-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hr-hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hu-hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_id-id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_is-is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_it-it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_it-sm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_iw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ja-jp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_kn-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_kn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ko-kr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ln-cd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ln.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_lt-lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_lv-lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ml-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_mr-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_mr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ms-my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_mt-mt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_mt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_nl-cw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_nl-nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_nl-sx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_or-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_or.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pl-pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pt-pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ro-ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ru-ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sk-sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sl-si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sq-al.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sr-cyrl-rs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sr-latn-rs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sv-se.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sw-tz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ta-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_te-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_te.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_th-th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_tl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_tr-tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_uk-ua.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ur-pk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ur.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_vi-vn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh-hans-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh-hk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zu-za.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-resource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-resource.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-resource.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-route.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-route.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-sanitize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-sanitize.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-sanitize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-touch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-touch.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-touch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/sinasdk/callback.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/comment/comment.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/extensions/easyimage/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/sinasdk/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/current.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/dialog/delete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/dialog/dialog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/directives.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/comment/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/errors.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/filters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/flag/flag.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/index-async.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/views/admin/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/sinasdk/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/index2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/jquery-1.102.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/lib.controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/like/like.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/photo/list-all.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/photo/list-produced.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/photo/list-producing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/photo/list-rank.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/comment/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/photo/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/views/admin/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logined.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/neighbor.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/controllers/photo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/services/photo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/photo.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/comment/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/comment/recent.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/recent.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/comment/recent.jsons" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/recent.jsons" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/recent2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/extensions/easyimage/assets/retina.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/services.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/ui-bootstrap-0.9.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/ui-bootstrap-tpls-0.9.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/json/user/user.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/version.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/sinasdk/weibolist.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winner.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/888.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/checked.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/checked2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/dmx_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/dmx_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/introduce.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inviteBtn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inviteBtn2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/invited_txt.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/join_btn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/learnmore.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/lily_weibo_app_0123_14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/listHD.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/list_infor.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/list_line.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/list_line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/list_more.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/list_more.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/list_pho.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/listbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/nav.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/nav_sep.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/pagesubhead.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/pagetitle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/popup_back.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/popup_close.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/popup_friends.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/popup_login.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/rank_line.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ranktitle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/rule.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/search_icon.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/step1_ele.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/step2_ele.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/step3_ele.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/step_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/step_bg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/step_produced.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/step_wait_approve.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/style_icon_1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/style_icon_2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/style_icon_3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/style_icon_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/style_icon_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/term.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/topnav.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/total.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/trans.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/userBtn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/userBtn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/userPhobg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/userSeat.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/userWeibo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/user_form_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/userbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/video.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/videodemo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/waiting.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/components/Controller.php" afterPath="$PROJECT_DIR$/api/protected/components/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/models/Photo.php" afterPath="$PROJECT_DIR$/api/protected/models/Photo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/PhotoController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/PhotoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/models/User.php" afterPath="$PROJECT_DIR$/api/protected/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/UserController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/components/UserIdentity.php" afterPath="$PROJECT_DIR$/api/protected/components/UserIdentity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/api.js" afterPath="$PROJECT_DIR$/js/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/admin_asset/css/admin.css" afterPath="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/admin_asset/js/app.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/runtime/application.log" afterPath="$PROJECT_DIR$/api/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/index.php" afterPath="$PROJECT_DIR$/api/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/config/main.php" afterPath="$PROJECT_DIR$/api/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style_ie6.css" afterPath="$PROJECT_DIR$/css/style_ie6.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/framework/yiilite.php" afterPath="$PROJECT_DIR$/api/framework/yiilite.php" />
     </list>
     <ignored path="ave_photowall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391603254563" ignored="false" />
+    <file path="/Dummy.txt" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391611474012" ignored="false" />
     <file path="/PhotoController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391587422789" ignored="false" />
     <file path="/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391493636350" ignored="false" />
     <file path="/a.dummy" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391491236362" ignored="false" />
@@ -490,35 +64,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="23" selection-start="1670" selection-end="1678" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1936" column="64" selection-start="114796" selection-end="114796" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1391602822000" expanded="true" signature="9686:9744" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Photo.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/protected/models/Photo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="27" selection-start="5371" selection-end="5371" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -528,13 +73,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lp.base.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="7" selection-start="6266" selection-end="6266" vertical-scroll-proportion="0.016225448">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="39" column="83" selection-start="2855" selection-end="2861" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1963" column="42" selection-start="115848" selection-end="115862" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="176" column="13" selection-start="4725" selection-end="4725" vertical-scroll-proportion="-3.392857">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="23" selection-start="1670" selection-end="1678" vertical-scroll-proportion="-27.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="56" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.34455958">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="43" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -548,37 +136,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/js/app.js">
+      <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="12" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="170" column="7" selection-start="6266" selection-end="6266" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="Photo.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/models/Photo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="23" selection-start="4040" selection-end="4040" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhotoController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="40" selection-start="4558" selection-end="4558" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rule.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rule.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1963" column="42" selection-start="115848" selection-end="115862" vertical-scroll-proportion="0.0">
+            <state line="184" column="27" selection-start="5371" selection-end="5371" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -602,10 +174,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/api/admin_asset/js/services/photo.js" />
         <option value="$PROJECT_DIR$/api/protected/views/admin/index.php" />
         <option value="$PROJECT_DIR$/api/admin_asset/js/controllers/photo.js" />
-        <option value="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
         <option value="$PROJECT_DIR$/api/protected/components/UserIdentity.php" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/photo/list.html" />
         <option value="$PROJECT_DIR$/api/protected/controllers/AdminController.php" />
@@ -618,6 +188,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/lp.base.js" />
+        <option value="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
+        <option value="$PROJECT_DIR$/api/admin_asset/js/app.js" />
       </list>
     </option>
   </component>
@@ -653,7 +225,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1036,6 +607,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1094,13 +666,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2243" height="1319" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25216204" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25443786" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1176,11 +748,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/photo/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="28" selection-start="1183" selection-end="1183" vertical-scroll-proportion="-23.75" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/components/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1206,18 +773,11 @@
         <state line="68" column="50" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.5132365" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="23" selection-start="1670" selection-end="1678" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1936" column="64" selection-start="114796" selection-end="114796" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1391602822000" expanded="true" signature="9686:9744" placeholder="..." />
+            <marker date="1391602822000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1229,30 +789,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="40" selection-start="4558" selection-end="4558" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/models/Photo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="184" column="27" selection-start="5371" selection-end="5371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="23" selection-start="4040" selection-end="4040" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1264,18 +803,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/lp.base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="7" selection-start="6266" selection-end="6266" vertical-scroll-proportion="0.016225448">
+        <state line="170" column="7" selection-start="6266" selection-end="6266" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="39" column="83" selection-start="2855" selection-end="2861" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="43" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="13" selection-start="4725" selection-end="4725" vertical-scroll-proportion="-3.392857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="23" selection-start="1670" selection-end="1678" vertical-scroll-proportion="-27.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="56" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.34455958">
           <folding />
         </state>
       </provider>
