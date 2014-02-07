@@ -61,7 +61,6 @@ class UserController extends Controller
 					$access_token = $token["access_token"];
 					$sns_id = $token["uid"];
 				}
-				print $access_token;
 				$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
 				$basic_account = $c->show_user_by_id($sns_id);
 				if ($user = $this->getUser($basic_account['id'])) {
@@ -75,10 +74,10 @@ class UserController extends Controller
 						$this->responseJSON($user,'success');
 					}
 				}
+				echo "Success! Please close this window";
 			} catch(oAuthException $e) {
 				echo 'error';
 			}
-			//$this->redirect('../../../logined.html');
 		} else {
 			echo 'error';
 		}
@@ -137,9 +136,5 @@ class UserController extends Controller
 		$mUser->update();
 	}
 
-	public function actionUserStatus(){
-		$o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
-		$weiboUrl = $o->getAuthorizeURL(WB_CALLBACK_URL);
-		$this->responseJSON($weiboUrl, 'success');
-	}
+
 }

@@ -11,6 +11,15 @@ AveneAdminController
             $scope.counts = res;
         });
 
+
+        PhotoService.adminStatus(function(res){
+            console.log(res);
+            if(res.data != 1) {
+                $scope.status = true;
+                $scope.loginurl = res.data;
+            }
+        });
+
         $scope.refreshPage = function(){
             window.location.reload();
         }
@@ -22,11 +31,6 @@ AveneAdminController
             });
         }
 
-        $scope.logout = function(){
-            PhotoService.logout(function(){
-                window.location.reload();
-            });
-        }
 
 //        $scope.search = function(){
 //            if($scope.keyword == '') {

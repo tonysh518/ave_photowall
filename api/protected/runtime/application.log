@@ -5336,3 +5336,1074 @@ Stack trace:
 REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
 HTTP_REFERER=http://localhost/ave_photowall/api/admin/
 ---
+2014/02/07 13:58:14 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/UserController.php:64) (/Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php:56)
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/UserController.php(75): UserController->responseJSON()
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/actions/CInlineAction.php(49): UserController->actionSinacallback()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(286): UserController->runAction()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(265): UserController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): UserController->run()
+#6 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/ave_photowall/api/user/Sinacallback?code=6b1fed0e33ed228922d0b47bca699722
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php (56)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php (38)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/UserController.php (75)
+2014/02/07 13:59:33 [error] [php] Object of class stdClass could not be converted to string (/Applications/MAMP/htdocs/ave_photowall/api/framework/db/schema/CDbColumnSchema.php:146)
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/db/ar/CActiveRecord.php(806): Photo->insert()
+#1 /Applications/MAMP/htdocs/ave_photowall/api/protected/models/Photo.php(147): Photo->save()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php(182): Photo->fetchContents()
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/actions/CInlineAction.php(49): PhotoController->actionFetch()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(133): PhotoController->runAction()
+#6 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CInlineFilter.php(58): PhotoController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(265): PhotoController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): PhotoController->run()
+#13 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/ave_photowall/api/photo/fetch
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/models/Photo.php (147)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php (182)
+in /Applications/MAMP/htdocs/ave_photowall/api/index.php (20)
+2014/02/07 14:01:10 [error] [php] Use of undefined constant mid - assumed 'mid' (/Applications/MAMP/htdocs/ave_photowall/api/protected/models/Photo.php:138)
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(133): PhotoController->runAction()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CInlineFilter.php(58): PhotoController->filterAccessControl()
+#5 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(265): PhotoController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): PhotoController->run()
+#9 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/ave_photowall/api/photo/fetch
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/models/Photo.php (138)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php (182)
+in /Applications/MAMP/htdocs/ave_photowall/api/index.php (20)
+2014/02/07 14:09:11 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php:93) (/Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php:56)
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php(107): PhotoController->responseJSON()
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/actions/CInlineAction.php(49): PhotoController->actionList()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(133): PhotoController->runAction()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CInlineFilter.php(58): PhotoController->filterAccessControl()
+#7 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(265): PhotoController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): PhotoController->run()
+#11 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/ave_photowall/api/index.php/photo/list?page=1&pagenum=15&_=1391778480971
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php (56)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php (38)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php (107)
+2014/02/07 14:09:32 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php:94) (/Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php:56)
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php(107): PhotoController->responseJSON()
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/actions/CInlineAction.php(49): PhotoController->actionList()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(133): PhotoController->runAction()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CInlineFilter.php(58): PhotoController->filterAccessControl()
+#7 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(265): PhotoController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): PhotoController->run()
+#11 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/ave_photowall/api/index.php/photo/list?page=1&pagenum=15&_=1391778480971
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php (56)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php (38)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php (107)
+2014/02/07 14:09:47 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php:94) (/Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php:56)
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php(107): PhotoController->responseJSON()
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/actions/CInlineAction.php(49): PhotoController->actionList()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(133): PhotoController->runAction()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CInlineFilter.php(58): PhotoController->filterAccessControl()
+#7 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(265): PhotoController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): PhotoController->run()
+#11 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/ave_photowall/api/index.php/photo/list?page=1&pagenum=15&_=1391778480971
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php (56)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/components/Controller.php (38)
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/PhotoController.php (107)
+2014/02/07 14:20:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:20:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:22:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:22:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:58:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:58:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 14:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:00:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:02:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:02:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:06:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:06:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:06:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:06:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:11:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:11:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:29:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:29:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:30:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/img/gender_{{photo.gender}}.gif".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/img...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/admin_asset/img/gender_%7B%7Bphoto.gender%7D%7D.gif
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:30:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{{photo.image | thumbnail}}".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('{{photo.image |...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/%7B%7Bphoto.image%20|%20thumbnail%7D%7D
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:30:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:30:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:31:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 15:59:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 16:31:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 16:31:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 16:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 16:32:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 16:42:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/post
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 16:44:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(270): CController->missingAction('api')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/api/winne...')
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/ave_photowall/api/admin/api/winner/UploadImage
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 16:45:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/winner/UploadImage".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('api/winner/Uplo...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api/api/winner/UploadImage
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 16:45:31 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/WinnerController.php:66)
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(286): WinnerController->runAction()
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(265): WinnerController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): WinnerController->run()
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/ave_photowall/api//winner/UploadImage
+in /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/WinnerController.php (66)
+in /Applications/MAMP/htdocs/ave_photowall/api/index.php (20)
+2014/02/07 17:12:11 [error] [exception.CException] exception 'CException' with message 'Property "Winner.prize_image" is not defined.' in /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/db/ar/CActiveRecord.php(161): CComponent->__set('prize_image', NULL)
+#1 /Applications/MAMP/htdocs/ave_photowall/api/protected/controllers/WinnerController.php(101): CActiveRecord->__set('prize_image', NULL)
+#2 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/actions/CInlineAction.php(49): WinnerController->actionPost()
+#3 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(282): CController->run('post')
+#7 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('winner/post')
+#8 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/ave_photowall/api//winner/post?avatar=fdsfdsf&month=3&name=fdsf&photo=%2Fupload%2Fwinner%2F52f505d7cd2f5_1391789527.jpg&prize_image=%2Fupload%2Fwinner%2F52f505dab1e1d_1391789530.jpg&tel=323
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---

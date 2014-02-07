@@ -41,7 +41,7 @@ class Photo extends CActiveRecord
 			array('gender', 'length', 'max'=>5),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('pid, weibo_id, image, screen_name, gender, location, sns_uid, avatar, content, status, datetime', 'safe', 'on'=>'search'),
+			array('pid, weibo_id, url, image, screen_name, gender, location, sns_uid, avatar, content, status, datetime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -132,8 +132,10 @@ class Photo extends CActiveRecord
 				// Fetch Image
 				$filename = $this->fetchImage($weibo);
 				if($filename) {
+					$urlJson = json_decode(file_get_contents("http://api.t.sina.com.cn/querymid.json?id=".$weibo['id']));
 					$photo = new Photo();
 					$photo->weibo_id = $weibo['id'];
+					$photo->url = $urlJson->mid;
 					$photo->image = $filename;
 					$photo->screen_name = $weibo['user']['screen_name'];
 					$photo->sns_uid = $weibo['user']['id'];
@@ -230,4 +232,8 @@ class Photo extends CActiveRecord
 
 		return $count;
 	}
+
+
+
+
 }

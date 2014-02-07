@@ -39,10 +39,10 @@ AveneAdminServices.factory( 'PhotoService', function($http, ROOT) {
                 });
         },
 
-        produceNow: function(success) {
-            $http.post(ROOT+'/scarf/produceNow')
-                .success(function() {
-                    success();
+        adminStatus: function(success) {
+            $http.post(ROOT+'/admin/AdminStatus')
+                .success(function(res) {
+                    success(res);
                 })
                 .error(function() {
 

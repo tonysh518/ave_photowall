@@ -2259,6 +2259,7 @@
 <!-- node-item-tpl -->
 <script type="text/tpl" id="node-item-template">
     <div data-a="node" data-d="nid={{pid}}" class="photo_item symj_btn photo_item_{{pid}}">
+        <a href="http://weibo.com/{{link}}" target="_blank" class="symj_share_link"></a>
         <img src="./api{{thumb}}" width="190" />
     </div>
 </script>
@@ -2271,7 +2272,7 @@
             <div class="symj_popup_left" data-a="prev"></div>
             <div class="symj_popup_right" data-a="next"></div>
             <div class="symj_popup_close symj_btn" data-a="close_pop"></div>
-            <div class="symj_img"><img src="./api{{image}}" /></div>
+            <div class="symj_img"><a href="http://weibo.com/{{link}}" target="_blank" class="symj_share_link"></a><img src="./api{{image}}" /></div>
             <div class="symj_description">
                 {{content}}
             </div>

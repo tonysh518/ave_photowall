@@ -10,6 +10,10 @@
   </ul>
 </div>
 
+<div class="needlogin" ng-show="status">
+	<a href="{{loginurl}}" target="_blank">The weibo token is expired, the fetch function stopped, you need login weibo again!</a>
+</div>
+
 <div class="page">
   <ul ng-show="showSubNav" sub-nav class="sub-nav nav nav-pills">
     <li><a href="#/photo/list/all">All <span>({{counts.all}})</span></a></li>
@@ -23,18 +27,20 @@
 
   <div ng-view></div>
 </div>
-
-
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/lib/angular/angular.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/lib/angular/angular-route.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/lib/angular/ui-bootstrap-0.9.0.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/lib/angular/ui-bootstrap-tpls-0.9.0.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/lib/angular/angular-file-upload.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/lib/angular/angular-file-upload-shim.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/app.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/photo.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/winner.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/lib.controllers.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/photo.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/winner.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/filters.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/directives.js"></script>
 </body>

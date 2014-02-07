@@ -5,6 +5,10 @@ class AdminController extends Controller
 	public $defaultAction = 'index';
 	public $request;
 
+	public function getRole() {
+		return Yii::app()->session['user_role'];
+	}
+
 	public function init() {
 		parent::init();
 		$this->request = Yii::app()->getRequest();
@@ -84,5 +88,25 @@ class AdminController extends Controller
 			"data" => "logout success",
 			"error" => NULL
 		));
+	}
+
+	public function actionAdminStatus(){
+		if($this->getRole() != 2) {
+			return;
+		}
+		$adminUid = Yii::app()->params['adminWeiboUid'];
+		$adminUser = User::model()->findByAttributes(array('sns_uid'=>$adminUid));
+		$access_token = $adminUser->access_token;
+		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
+		//TODO: Change to search hashtag api
+		$contents = $c->public_timeline();
+		if(isset($contents['error_code'])){
+			$o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
+			$weiboUrl = $o->getAuthorizeURL(WB_CALLBACK_URL);
+			$this->responseJSON($weiboUrl, 'success');
+		}
+		else {
+			$this->responseJSON(1, 'success');
+		}
 	}
 }

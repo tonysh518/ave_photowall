@@ -31,8 +31,8 @@ class Winner extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('wid, month, photo, name, avatar, tel, prize, prize_img', 'required'),
-			array('wid, month', 'numerical', 'integerOnly'=>true),
+			array('month, photo, name, avatar, tel, prize, prize_img', 'required'),
+			array('month', 'numerical', 'integerOnly'=>true),
 			array('photo, name, avatar, prize, prize_img', 'length', 'max'=>255),
 			array('tel', 'length', 'max'=>16),
 			// The following rule is used by search().

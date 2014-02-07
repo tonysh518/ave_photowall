@@ -72,11 +72,11 @@ class PhotoController extends Controller
 		}
 		$photo = new Photo();
 		$criteria=new CDbCriteria;
-		if(1) {
+		if($this->getRole() == 2) {
 			$criteria->select='*';
 		}
 		else {
-			$criteria->select='pid,image,content,datetime';
+			$criteria->select='pid,url,sns_uid,image,content,datetime';
 		}
 		if($status != 'all' && $this->getRole() == 2) {
 			$criteria->condition='status=:status';
@@ -90,6 +90,7 @@ class PhotoController extends Controller
 		$retdata = array();
 		foreach($photos as $photo) {
 			$data = $photo->attributes;
+			$data['link']= $data['sns_uid'].'/'.$data['url'];
 			unset($data['avatar']);
 			unset($data['sns_uid']);
 			if($this->getRole() != 2) {
@@ -97,6 +98,8 @@ class PhotoController extends Controller
 				unset($data['screen_name']);
 			}
 			unset($data['weibo_id']);
+			unset($data['url']);
+
 			$retdata[] = $data;
 		}
 
@@ -353,4 +356,5 @@ class PhotoController extends Controller
 			Yii::app()->end();
 		}
 	}
+
 }

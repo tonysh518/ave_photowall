@@ -1,0 +1,54 @@
+<div class="winner-form">
+    <div class="form-group">
+        <label>Weibo Name</label>
+        <select class="form-control" ng-model="month">
+            <option value="">Select Month</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Weibo Name</label>
+        <input class="form-control" type="text" ng-model="name">
+    </div>
+
+    <div class="form-group">
+        <label>Avatar URL</label><small> (Copy the avatar url from Weibo)</small>
+        <input class="form-control" type="text" ng-model="avatar">
+
+    </div>
+
+    <div class="form-group">
+        <label>Tel</label>
+        <input class="form-control" type="text" ng-model="tel">
+    </div>
+
+    <div class="form-group">
+        <label>Photo</label>
+        <input type="file" ng-file-select="onFileSelect($files,'photo')" >
+        <img height="80" src="{{photo_preview}}" ng-show="photo" />
+    </div>
+
+    <div class="form-group">
+        <label>Prize</label>
+        <input class="form-control" type="text" ng-model="prize">
+    </div>
+
+    <div class="form-group">
+        <label>Prize Image</label>
+        <input type="file" ng-file-select="onFileSelect($files,'prize_image')" >
+        <img height="80" src="{{prize_image_preview}}" ng-show="photo" />
+    </div>
+
+    <button class="btn btn-info" ng-click="submit()">Save The Winner</button>
+</div>

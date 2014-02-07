@@ -4,6 +4,7 @@
 // Declare app level module which depends on filters, and services
 var SGWallAdmin = angular.module('AveneAdmin', [
   'ui.bootstrap',
+  'angularFileUpload',
   'ngRoute',
   'AveneAdmin.filters',
   'AveneAdmin.services',
@@ -13,6 +14,8 @@ var SGWallAdmin = angular.module('AveneAdmin', [
 config(function($routeProvider,$httpProvider) {
     var ROOT = '/ave_photowall/api/';
     $routeProvider.when('/photo/list/:status', {templateUrl: ROOT+'/admin_asset/tmp/photo/list.html', controller: 'PhotoCtrList'});
+    $routeProvider.when('/winner/post', {templateUrl: ROOT+'/admin_asset/tmp/winner/post.html', controller: 'WinnerPostCtrList'});
+    $routeProvider.when('/winner/list', {templateUrl: ROOT+'/admin_asset/tmp/winner/list.html', controller: 'WinnerListCtrList'});
 //    $routeProvider.when('/scarf/unapproved', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list.html', controller: 'ScarfCtrListUnapproved'});
 //    $routeProvider.when('/scarf/produced', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-produced.html', controller: 'ScarfCtrListProduced'});
 //    $routeProvider.when('/scarf/all', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-all.html', controller: 'ScarfCtrListAll'});
