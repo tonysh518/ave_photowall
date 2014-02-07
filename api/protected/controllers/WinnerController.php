@@ -82,6 +82,9 @@ class WinnerController extends Controller
 
 
 	public function actionPost() {
+		if($this->getRole() != 2) {
+			return;
+		}
 		$request = Yii::app()->getRequest();
 		$month = $request->getPost('month');
 		$name = $request->getPost('name');
@@ -108,6 +111,49 @@ class WinnerController extends Controller
 			echo 0;
 		}
 
+	}
+
+
+	public function actionPut() {
+		if($this->getRole() != 2) {
+			return;
+		}
+		$request = Yii::app()->getRequest();
+		$wid = $request->getPost('wid');
+		$month = $request->getPost('month');
+		$name = $request->getPost('name');
+		$avatar = $request->getPost('avatar');
+		$tel = $request->getPost('tel');
+		$photo = $request->getPost('photo');
+		$prize = $request->getPost('prize');
+		$prize_img = $request->getPost('prize_img');
+
+		$winner = Winner::model()->findByPk($wid);
+		$winner->month = $month;
+		$winner->name = $name;
+		$winner->avatar = $avatar;
+		$winner->tel = $tel;
+		$winner->photo = $photo;
+		$winner->prize = $prize;
+		$winner->prize_img = $prize_img;
+		$winner->save();
+		if($winner->validate()) {
+			$winner->save();
+			echo 1;
+		}
+		else {
+			echo 0;
+		}
+	}
+
+	public function actionGetByID() {
+		if($this->getRole() != 2) {
+			return;
+		}
+		$request = Yii::app()->getRequest();
+		$wid = $request->getParam('wid');
+		$winner = Winner::model()->findByPk($wid);
+		$this->responseJSON($winner, "success");
 	}
 
 }

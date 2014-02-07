@@ -6407,3 +6407,38 @@ Stack trace:
 REQUEST_URI=/ave_photowall/api//winner/post?avatar=fdsfdsf&month=3&name=fdsf&photo=%2Fupload%2Fwinner%2F52f505d7cd2f5_1391789527.jpg&prize_image=%2Fupload%2Fwinner%2F52f505dab1e1d_1391789530.jpg&tel=323
 HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
 ---
+2014/02/07 17:54:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/winner/52f5071f1e3c1_1391789855.jpg".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('upload/winner/5...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api//upload/winner/52f5071f1e3c1_1391789855.jpg
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 17:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/winner/52f5071f1e3c1_1391789855.jpg".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('upload/winner/5...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api//upload/winner/52f5071f1e3c1_1391789855.jpg
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 17:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/winner/52f5071f1e3c1_1391789855.jpg".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('upload/winner/5...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api//upload/winner/52f5071f1e3c1_1391789855.jpg
+HTTP_REFERER=http://localhost/ave_photowall/api/admin/index
+---
+2014/02/07 17:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/winner/52f5071f1e3c1_1391789855.jpg".' in /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/ave_photowall/api/framework/web/CWebApplication.php(141): CWebApplication->runController('upload/winner/5...')
+#1 /Applications/MAMP/htdocs/ave_photowall/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/ave_photowall/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/ave_photowall/api//upload/winner/52f5071f1e3c1_1391789855.jpg
+---

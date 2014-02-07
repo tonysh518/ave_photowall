@@ -15,6 +15,7 @@ config(function($routeProvider,$httpProvider) {
     var ROOT = '/ave_photowall/api/';
     $routeProvider.when('/photo/list/:status', {templateUrl: ROOT+'/admin_asset/tmp/photo/list.html', controller: 'PhotoCtrList'});
     $routeProvider.when('/winner/post', {templateUrl: ROOT+'/admin_asset/tmp/winner/post.html', controller: 'WinnerPostCtrList'});
+    $routeProvider.when('/winner/edit/:wid', {templateUrl: ROOT+'/admin_asset/tmp/winner/post.html', controller: 'WinnerEditCtrList'});
     $routeProvider.when('/winner/list', {templateUrl: ROOT+'/admin_asset/tmp/winner/list.html', controller: 'WinnerListCtrList'});
 //    $routeProvider.when('/scarf/unapproved', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list.html', controller: 'ScarfCtrListUnapproved'});
 //    $routeProvider.when('/scarf/produced', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-produced.html', controller: 'ScarfCtrListProduced'});

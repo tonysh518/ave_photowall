@@ -1,7 +1,7 @@
 <div class="winner-form">
     <div class="form-group">
         <label>Weibo Name</label>
-        <select class="form-control" ng-model="month">
+        <select class="form-control" ng-model="winner.month">
             <option value="">Select Month</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -17,37 +17,39 @@
         </select>
     </div>
 
+    <input class="form-control" type="hidden" ng-model="winner.wid">
+
     <div class="form-group">
         <label>Weibo Name</label>
-        <input class="form-control" type="text" ng-model="name">
+        <input class="form-control" type="text" ng-model="winner.name" >
     </div>
 
     <div class="form-group">
         <label>Avatar URL</label><small> (Copy the avatar url from Weibo)</small>
-        <input class="form-control" type="text" ng-model="avatar">
+        <input class="form-control" type="text" ng-model="winner.avatar">
 
     </div>
 
     <div class="form-group">
         <label>Tel</label>
-        <input class="form-control" type="text" ng-model="tel">
+        <input class="form-control" type="text" ng-model="winner.tel">
     </div>
 
     <div class="form-group">
         <label>Photo</label>
         <input type="file" ng-file-select="onFileSelect($files,'photo')" >
-        <img height="80" src="{{photo_preview}}" ng-show="photo" />
+        <img height="80" src="{{winner.photo_preview}}" ng-show="winner.photo" />
     </div>
 
     <div class="form-group">
         <label>Prize</label>
-        <input class="form-control" type="text" ng-model="prize">
+        <input class="form-control" type="text" ng-model="winner.prize">
     </div>
 
     <div class="form-group">
         <label>Prize Image</label>
-        <input type="file" ng-file-select="onFileSelect($files,'prize_image')" >
-        <img height="80" src="{{prize_image_preview}}" ng-show="photo" />
+        <input type="file" ng-file-select="onFileSelect($files,'prize_img')" >
+        <img height="80" src="{{winner.prize_img_preview}}" ng-show="winner.photo" />
     </div>
 
     <button class="btn btn-info" ng-click="submit()">Save The Winner</button>
