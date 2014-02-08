@@ -46,6 +46,7 @@ class UserController extends Controller
 	 * Sina Callback
 	 */
 	public function actionSinacallback() {
+    set_time_limit(0);
 		$o = new SaeTOAuthV2(WB_AKEY, WB_SKEY);
 		if ($code = $this->request->getQuery('code')) {
 			$keys = array();

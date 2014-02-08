@@ -22,6 +22,19 @@ AveneAdminServices.factory( 'WinnerService', function($http, ROOT) {
                 .error(function() {
                 });
         },
+
+        delete: function(param, success) {
+
+            $http.post(ROOT+'/winner/delete', param, {
+                cache: false
+            })
+            .success(function(data) {
+                success(data);
+            })
+            .error(function() {
+            });
+        },
+
         list: function( success) {
 
             $http.get(ROOT+'/winner/list', {
@@ -46,6 +59,8 @@ AveneAdminServices.factory( 'WinnerService', function($http, ROOT) {
             .error(function() {
             });
         }
+
+
 
 
     };

@@ -16,14 +16,15 @@ a:hover {color:#888;}
 .clear{+zoom:1;}
 .clear:before,
 .clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
-.needlogin {position: fixed;width:400px;top:0;right:100px;margin-left:-200px;background:#dc0000;color:#fff;padding:5px 20px;}
+.needlogin {display:none;position: fixed;width:400px;top:0;right:100px;margin-left:-200px;background:#dc0000;color:#fff;padding:5px 20px;}
 .needlogin a {color:#fff;font-weight: bold;font-style:italic;}
+.needlogin-true {display: block;}
 .header {height:57px;background:#666;position: relative;padding-top:1px;}
     .header .logo {background:url(../img/logo.png) no-repeat;width:121px;height:45px;margin:12px 0 0 40px;}
     .header .nav {position: absolute;left:200px;bottom:0;font-weight: bold;}
     .header .nav-tabs {border: none;}
     .header .nav-tabs > li > a {color:#ccc;}
-.header .nav-tabs > li.active > a {color:#666;}
+    .header .nav-tabs > li.active > a {color:#666;}
     .header .nav-tabs > li > a:hover {color:#777;}
     .header .logout {position: absolute;right:15px;top:15px;font-size:14px;color:#eee;}
     .header .logout a {color:#eee;}
@@ -58,6 +59,7 @@ table tr:hover td {background:#f7f7f7;}
 .btn-danger {}
 table .btn {text-transform: capitalize;}
 
+.loading {background: url(../img/loading.gif) no-repeat;width:28px;height:28px;margin:20px 0;}
 .list li {float:left;width:191px;height:228px;margin:10px;}
 .list li em {color:#aaa;font-style: italic;}
 .list li .photo {position: relative;}
@@ -68,6 +70,12 @@ table .btn {text-transform: capitalize;}
 .list li .switch-1 {background-position:left 0;}
 .list li .user {margin:4px 0 0;}
 .list li .user img {vertical-align: middle;}
+.list li .user.gender_f {background: url(../img/gender_f.gif) no-repeat 0 2px;padding:0 0 0 20px;}
+.list li .user.gender_m {background: url(../img/gender_m.gif) no-repeat 0 2px;padding:0 0 0 20px;}
+
+.winner-form {width:600px;}
+.btn-create-winner {margin-bottom: 20px;}
+form .error {font-size:11px;font-style: italic;color:#e2c094;}
 
 .modal {top:30%;}
 .modal-header {border: none;}

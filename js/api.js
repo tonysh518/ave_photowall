@@ -23,7 +23,8 @@ define(function( require , exports , model ){
     // 配置
     var _api = {
         list: {path: 'api/index.php/photo/list', method:'get'},
-        winnerList: {path: 'api/index.php/winner/list', method:'get'}
+        winnerList: {path: 'api/index.php/winner/list', method:'get'},
+        getcounts: {path: 'api/index.php/photo/getcounts', method:'get'}
     };
 
     // 内部API

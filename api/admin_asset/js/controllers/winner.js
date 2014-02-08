@@ -1,10 +1,9 @@
 AveneAdminController
 
     .controller('WinnerPostCtrList', function($scope,$upload, $http, $modal,$location, $log, $routeParams, PhotoService, WinnerService, ROOT) {
-
+        $scope.winner = {};
         $scope.onFileSelect = function($files, type) {
             var file = $files[0];
-            console.log(file);
             $scope.upload = $upload.upload({
                 url: ROOT+'/winner/UploadImage',
                 data: {type: type},
@@ -28,7 +27,7 @@ AveneAdminController
                 prize_img : $scope.winner.prize_img
             }
             WinnerService.post(winner, function(res){
-                if(res) {
+                if(res == 1) {
                     $location.path( "/winner/list" );
                 }
             });
@@ -42,14 +41,28 @@ AveneAdminController
         WinnerService.list(function(res){
             $scope.winners = res.data;
         });
+
+        $scope.delete = function(winner) {
+            var modalInstance = $modal.open({
+                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
+                controller: ConfirmModalCtrl
+            });
+            modalInstance.result.then(function () {
+                WinnerService.delete({wid:winner.wid}, function(res){
+                    if(res == 1) {
+                        $scope.winners.splice($scope.winners.indexOf(winner), 1);
+                    }
+                });
+            }, function () {
+            });
+        }
     })
 
-    .controller('WinnerEditCtrList', function($scope,$upload, $http, $modal, $log, $routeParams, PhotoService, WinnerService, ROOT) {
+    .controller('WinnerEditCtrList', function($scope,$upload, $http, $modal, $log, $routeParams, PhotoService, WinnerService, ROOT_FOLDER) {
         WinnerService.get($routeParams.wid,function(res){
             $scope.winner = res.data;
-            $scope.winner.photo_preview = ROOT + $scope.winner.photo;
-            $scope.winner.prize_image_preview = ROOT + $scope.winner.prize_img;
-            console.log($scope.winner);
+            $scope.winner.photo_preview = ROOT_FOLDER + $scope.winner.photo;
+            $scope.winner.prize_img_preview = ROOT_FOLDER + $scope.winner.prize_img;
         });
 
         $scope.submit = function() {
@@ -64,7 +77,7 @@ AveneAdminController
                 prize_img : $scope.winner.prize_img
             }
             WinnerService.put(winner, function(res){
-                if(res) {
+                if(res == 1) {
                     $location.path( "/winner/list" );
                 }
             });

@@ -2,18 +2,16 @@ AveneAdminController
 
     .controller('PhotoCtrList', function($scope, $http, $modal, $log, $routeParams, PhotoService, ROOT) {
         params = {status:$routeParams.status, pagenum:20};
-        var total = $scope.counts.all;
-        switch($routeParams.status) {
-            case '1':
-                total = $scope.counts.approved;
-                break;
-            case '0':
-                total = $scope.counts.unapproved;
-                break;
-        }
-
-
         PhotoService.list(params, function(data){
+            var total = $scope.counts.all;
+            switch($routeParams.status) {
+                case '1':
+                    total = $scope.counts.approved;
+                    break;
+                case '0':
+                    total = $scope.counts.unapproved;
+                    break;
+            }
             $scope.photos = data.data;
             $scope.bigTotalItems = total;
             $scope.noOfPages = 0;
@@ -26,7 +24,7 @@ AveneAdminController
 
         $scope.pageChanged = function (page) {
             params.page = page;
-            if($scope.type = "search")
+            if($scope.type == "search")
             {
                 $scope.search(page);
             }

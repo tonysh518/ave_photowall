@@ -1,10 +1,11 @@
+<a ng-href="#/winner/post" class="btn btn-info btn-create-winner">Add New Monthly Winner</a>
 <table class="table">
     <tr>
-        <th width="20%">month</th>
-        <th width="20%">name</th>
-        <th width="20%">tel</th>
-        <th width="20%">prize</th>
-        <th width="20%">ACTION</th>
+        <th width="20%">Month</th>
+        <th width="20%">Name</th>
+        <th width="20%">Tel</th>
+        <th width="20%">Prize</th>
+        <th width="20%">Action</th>
     </tr>
     <tr ng-repeat="winner in winners">
         <td>{{winner.month}}</td>
@@ -12,7 +13,7 @@
         <td>{{winner.tel}}</td>
         <td>{{winner.prize}}</td>
         <td>
-            <a href="javascript:void(0)" class="btn btn-sm btn-warning" ng-click="edit(winner)">Edit</a>
+            <a ng-href="#/winner/edit/{{winner.wid}}" class="btn btn-sm btn-warning">Edit</a>
             <a href="javascript:void(0)" class="btn btn-sm btn-danger" ng-click="delete(winner)">Delete</a>
         </td>
     </tr>

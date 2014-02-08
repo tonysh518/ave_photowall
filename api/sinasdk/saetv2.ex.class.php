@@ -853,6 +853,14 @@ class SaeTClientV2
 		return $this->oauth->get('statuses/show', $params);
 	}
 
+  function show_counts( $id )
+  {
+    $this->id_format($id);
+    $params = array();
+    $params['ids'] = $id;
+    return $this->oauth->get('statuses/count', $params);
+  }
+
 	/**
 	 * 根据微博id号获取微博的信息
 	 *

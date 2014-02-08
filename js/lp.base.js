@@ -27,6 +27,41 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         // when current dom is main , and the recent ajax param orderby is 'like' or
         // 'random' , the datetime would not be showed.
         // pageParm.orderby == 'like' || pageParm.orderby == 'random' 此时不显示日历
+        prependNode: function( $dom , nodes ){
+            var aHtml = [];
+            var lastDate = null;
+            //var pageParm = $main.data('param'); //TODO:  pageParm.orderby == 'like' || pageParm.orderby == 'random' 此时不显示日历
+            nodes = nodes || [];
+
+            // save nodes to cache
+            var cache = $dom.data('nodes') || [];
+            var lastPid = cache[0].pid;
+            var lastNode = getObjectIndex(nodes, 'pid', lastPid);
+            var newNodes = nodes.splice(0,lastNode);
+            var count = cache.length - newNodes.length;
+            cache = cache.splice(0, count);
+            for(var i = 0; i < newNodes.length; i++ ) {
+                var $items = $dom.find('.photo_item');
+                $items.eq($items.length-1).remove();
+            }
+            $dom.data('nodes' , newNodes.concat( cache ) );
+            $.each( newNodes , function( index , node ){
+                node.thumb = node.image.replace('.jpg','_thumb.jpg');
+                LP.compile( 'node-item-template' ,
+                    node ,
+                    function( html ){
+                        aHtml.push( html );
+                        if( index == newNodes.length - 1 ){
+                            // render html
+                            $dom.prepend(aHtml.join(''));
+                            $dom.find('.photo_item:not(.reversal)').css({'opacity':0});
+                            //nodeActions.setItemWidth( $dom );
+                            nodeActions.setItemReversal( $dom );
+                        }
+                    });
+            } );
+        },
+
         inserNode: function( $dom , nodes ){
             var aHtml = [];
             var lastDate = null;
@@ -148,6 +183,16 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
     });
 
 
+    LP.action('addnew', function() {
+        pagenum = 15;
+        var pageParam = {page:1,pagenum:pagenum};
+        $('#symj_list').data('param',pageParam);
+        api.ajax('list', pageParam, function( result ){
+            nodeActions.prependNode( $('#symj_list') , result.data );
+        });
+    });
+
+
     LP.action('node', function(){
         _currentNodeIndex = $(this).prevAll().length;
         var nodes = $('#symj_list').data('nodes');
@@ -166,6 +211,14 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
                     top = '50%';
                 }
                 $symj_popup.animate({opacity:1,top:top},800,'easeOutQuart');
+                $('.symj_popup_loading').fadeOut();
+                preLoadImage(nodes);
+            });
+            //get counts
+            api.ajax('getcounts', {id:node.weibo_id}, function( result ){
+                if(result.success) {
+                    $('.symj_inner_share_link').html(result.data[0].reposts);
+                }
             });
         });
     });
@@ -180,11 +233,20 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
                 $(this).remove();
                 LP.compile( 'node-zoom-template' , node , function( html ){
                     $('.symj_popup_wrap').append($(html).find('.symj_popup'));
+                    $('.symj_popup_loading').fadeIn();
                     var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'-50%', 'opacity':0});
                     var $img = $('.symj_popup .symj_img img');
                     $img.ensureLoad(function(){
                         $(window).trigger('resize');
                         $symj_popup.animate({opacity:1, left:'50%'},300,'easeOutQuart');
+                        $('.symj_popup_loading').fadeOut();
+                        preLoadImage(nodes);
+                    });
+                    //get counts
+                    api.ajax('getcounts', {id:node.weibo_id}, function( result ){
+                        if(result.success) {
+                            $('.symj_inner_share_link').html(result.data[0].reposts);
+                        }
                     });
                 });
             });
@@ -201,11 +263,20 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
                 $(this).remove();
                 LP.compile( 'node-zoom-template' , node , function( html ){
                     $('.symj_popup_wrap').append($(html).find('.symj_popup'));
+                    $('.symj_popup_loading').fadeOut();
                     var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'150%', 'opacity':0});
                     var $img = $('.symj_popup .symj_img img');
                     $img.ensureLoad(function(){
                         $(window).trigger('resize');
                         $symj_popup.animate({opacity:1, left:'50%'},300,'easeOutQuart');
+                        $('.symj_popup_loading').fadeOut();
+                        preLoadImage(nodes);
+                    });
+                    //get counts
+                    api.ajax('getcounts', {id:node.weibo_id}, function( result ){
+                        if(result.success) {
+                            $('.symj_inner_share_link').html(result.data[0].reposts);
+                        }
                     });
                 });
             });
@@ -245,6 +316,17 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         });
     });
 
+    var preLoadImage = function(nodes){
+        for( var i = 0 ; i < 4 ; i++ ){
+            if( nodes[ _currentNodeIndex - i ] ){
+                $('<img/>').attr('src' , './api' + nodes[ _currentNodeIndex - i ].image);
+            }
+            if( nodes[ _currentNodeIndex + i ] ){
+                $('<img/>').attr('src' , './api' + nodes[ _currentNodeIndex + i ].image);
+            }
+        }
+    }
+
     var init = function(){
         if($('#symj_list').length) {
             LP.triggerAction('list');
@@ -253,9 +335,24 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         if($('.symj_winner_banner').length) {
             LP.triggerAction('winner_list');
         }
+
+        if($('.symj_home_banner').length) {
+            setInterval(function(){
+                LP.triggerAction('addnew');
+            },1000 * 60 * 5);
+
+        }
     }
 
     init();
+
+    var getObjectIndex = function(obj, key, val) {
+        var index=-1;
+        for(var i=0;i<obj.length;i++) {
+            if(obj[i][key]==val){index=i;break;}
+        }
+        return index;
+    }
 
 
     jQuery.fn.extend({

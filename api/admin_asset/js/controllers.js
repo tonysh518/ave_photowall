@@ -13,7 +13,6 @@ AveneAdminController
 
 
         PhotoService.adminStatus(function(res){
-            console.log(res);
             if(res.data != 1) {
                 $scope.status = true;
                 $scope.loginurl = res.data;

@@ -47,13 +47,13 @@ class AdminController extends Controller
 
     // 验证没有通过
     if (!$userIdentify->authenticate()) {
-      $this->redirect(Yii::app()->request->baseUrl.'/admin/index');
+      $this->redirect(Yii::app()->request->baseUrl.'/index.php/admin/index');
     }
     else {
       Yii::app()->user->login($userIdentify);
 			$user = User::model()->findByPk(Yii::app()->user->getId());
 			Yii::app()->session['user_role'] = $user->role;
-			$this->redirect(Yii::app()->request->baseUrl.'/admin/index');
+			$this->redirect(Yii::app()->request->baseUrl.'/index.php/admin/index');
     }
   }
 
@@ -73,11 +73,6 @@ class AdminController extends Controller
     }
   }
 
-
-  public function actionHashPassword() {
-    $pw = md5("1b$34*Uj");
-    print_r($pw);
-  }
 
 	/**
 	 * 退出

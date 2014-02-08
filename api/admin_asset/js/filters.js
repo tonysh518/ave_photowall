@@ -28,9 +28,9 @@ angular.module('AveneAdmin.filters', [])
             return output;
         }
     })
-    .filter('thumbnail', function() {
+    .filter('thumbnail', function(ROOT_FOLDER) {
         return function(input) {
-            var output = input.replace('.jpg','_thumb.jpg');
+            var output = ROOT_FOLDER+input.replace('.jpg','_thumb.jpg');
             return output;
         }
     });

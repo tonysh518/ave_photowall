@@ -92,7 +92,7 @@ class WinnerController extends Controller
 		$tel = $request->getPost('tel');
 		$photo = $request->getPost('photo');
 		$prize = $request->getPost('prize');
-		$prize_image = $request->getPost('prize_image');
+		$prize_img = $request->getPost('prize_img');
 
 		$winner = new Winner();
 		$winner->month = $month;
@@ -101,7 +101,7 @@ class WinnerController extends Controller
 		$winner->tel = $tel;
 		$winner->photo = $photo;
 		$winner->prize = $prize;
-		$winner->prize_img = $prize_image;
+		$winner->prize_img = $prize_img;
 		$winner->save();
 		if($winner->validate()) {
 			$winner->save();
@@ -145,6 +145,22 @@ class WinnerController extends Controller
 			echo 0;
 		}
 	}
+
+  public function actionDelete() {
+    if($this->getRole() != 2) {
+      return;
+    }
+    $request = Yii::app()->getRequest();
+    $wid = $request->getPost('wid');
+    if(Winner::model()->deleteByPk($wid)) {
+      echo 1;
+    }
+    else
+    {
+      echo 0;
+    }
+
+  }
 
 	public function actionGetByID() {
 		if($this->getRole() != 2) {

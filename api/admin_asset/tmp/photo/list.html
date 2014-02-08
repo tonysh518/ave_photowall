@@ -1,6 +1,4 @@
 <div ng-show="showSubNav" class="search">
-
-
     <div class="form-group">
         <label>Gender</label>
         <select class="form-control form-gender" ng-model="gender">
@@ -22,21 +20,18 @@
     <input ng-click="search(1)" type="button" class="btn btn-default" value="Search" />
 </div>
 
+<div ng-hide="photos" class="loading"></div>
 <ul class="list">
     <li ng-repeat="photo in photos">
-
         <div class="status-{{photo.status}}">
             <div class="photo">
-                <img src="../{{photo.image | thumbnail}}" />
+                <img src="{{photo.image | thumbnail}}" />
                 <a title="{{photo.content}}" class="black-overlay" href="http://weibo.com/{{photo.link}}" target="_blank"></a>
                 <a href="javascript:void(0)" class="switch switch-{{photo.status}}" ng-click="approve(photo)"></a>
             </div>
-            <div class="user">
-
-                <img src="../admin_asset/img/gender_{{photo.gender}}.gif" />
+            <div class="user gender_{{photo.gender}}">
                 <a target="_blank" href="http://weibo.com/{{photo.sns_uid}}">{{photo.screen_name}}</a>
                 <em>from</em> {{photo.location}}
-
             </div>
         </div>
     </li>
