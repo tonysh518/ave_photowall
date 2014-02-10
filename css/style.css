@@ -105,6 +105,7 @@
     #symj_list {padding:0;}
     .symj_list_box {margin:40px 0 0 -6px;}
     .symj_list_more {background:#fff url(../img/m/btn_more.gif) no-repeat center;width:270px;height:60px;position:relative;bottom:auto;left:auto;margin:0 auto;border:none;}
+    .symj_description {font-size:22px;}
 
     .symj_box2 {width:581px;margin-left:-10px;}
     .symj_rule1 {background:url(../img/m/rule1.gif) no-repeat;width:581px;height:940px;margin:40px auto 0 auto;}
@@ -115,6 +116,7 @@
     .symj_rule4_tit {background: url(../img/m/rule_tit4.gif) no-repeat;width:566px;margin:0 auto;}
     .symj_rule5_tit {background: url(../img/m/rule_tit5.gif) no-repeat;width:566px;margin:0 auto;}
     .symj_rule_tit_icon {background: url(../img/m/rule_icon.gif) no-repeat right top;height:50px;}
+    .symj_inner_share_link {font-size:18px;background: url(../img/icon_share.gif) no-repeat;background-size:30px 29px;padding:7px 0 0 40px;height:24px;margin-top:5px;}
 
     .symj_winner_banner {background: url(../img/m/winner_banner.jpg) no-repeat;width:554px;height:322px;}
     .symj_winner_title {background: url(../img/m/winner_tit2.gif) no-repeat;width:554px;height:41px;margin:0 auto 22px auto;border-bottom:1px solid #c5c5c5;}

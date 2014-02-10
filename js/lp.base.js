@@ -128,8 +128,8 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         var ratio = imgWidth/imgHeight;
         var winWidth = $(window).width();
         var winHeight = $(window).height();
-        var maxHeight = winHeight - 130;
-        var maxWidth = winWidth - 50;
+        var maxHeight = winHeight - 250;
+        var maxWidth = winWidth - 150;
         if(imgHeight > maxHeight) {
             imgHeight = maxHeight;
         }
@@ -138,11 +138,12 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         }
         if(winWidth <= 640)
         {
-            if(ratio > 0) {
-                imgWidth = imgHeight * ratio;
+            if(ratio > 1) {
+                imgHeight = imgWidth / ratio;
             }
             else {
-                imgHeight = imgWidth / ratio;
+                console.log(imgHeight);
+                imgWidth = imgHeight * ratio;
             }
             $img.height(imgHeight).width(imgWidth);
             $symj_popup.css({width:imgWidth});

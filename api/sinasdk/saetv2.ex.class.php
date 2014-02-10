@@ -583,6 +583,18 @@ class SaeTClientV2
 		return $this->oauth->get('statuses/home_timeline', $params);
 	}
 
+
+  function search_topics( $q, $page = 1, $count = 50 )
+  {
+    $params = array();
+
+    $params['count'] = intval($count);
+    $params['page'] = intval($page);
+    $params['q'] = urlencode($q);
+
+    return $this->oauth->get('search/topics', $params);
+  }
+
 	/**
 	 * 获取当前登录用户及其所关注用户的最新微博消息。
 	 *

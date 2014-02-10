@@ -1933,7 +1933,7 @@
           <li class="symj_nav3"><a href="winner.html">中奖名单</a></li>
         </ul>
       </div>
-      <a class="symj_home_btn1 symj_btn" href="#"></a>
+      <a class="symj_home_btn1 symj_btn" target="_blank" href="http://huati.weibo.com/794066"></a>
       <a class="symj_home_btn2 symj_btn" href="winner.html"></a>
     </div>
     <div class="symj_box2 symj_list_box">
