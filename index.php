@@ -21,7 +21,7 @@
   <meta name="generator" content="Drupal 7 (http://drupal.org)"/>
   <meta name="keywords" content="雅漾活动,雅漾照片墙,Avene照片分享,雅漾照片分享"/>
   <meta content="雅漾活泉" about="/eta-origin" property="dc:title"/>
-  <meta about="/eta-origin" property="sioc:num_replies" content="0" datatype="xsd:integer"/>
+  <meta about="/" property="sioc:num_replies" content="0" datatype="xsd:integer"/>
   <meta name="description" content="雅漾照片墙,晒出你的健康美,赶紧来赢取雅漾惊喜大奖吧！"/>
   <title>雅漾照片墙晒片赢大奖_雅漾照片分享_雅漾AVENE官方网站</title>
 
@@ -115,7 +115,7 @@
 
     <div id="block-user-login">
       <div class="block-title">登录</div>
-      <form class="user-login" action="/eta-origin" method="post" id="user-login" accept-charset="UTF-8">
+      <form class="user-login" action="/" method="post" id="user-login" accept-charset="UTF-8">
         <div>
           <div class="form-item form-type-textfield form-item-name">
             <label for="edit-name">用户名/邮箱 <span class="form-required"
@@ -2063,7 +2063,7 @@
     <div id="block-webform-client-block-1" class="block block-webform even">
 
 
-      <form class="webform-client-form webform-client-form-1" enctype="multipart/form-data" action="/eta-origin"
+      <form class="webform-client-form webform-client-form-1" enctype="multipart/form-data" action="/"
             method="post" id="webform-client-form-1" accept-charset="UTF-8">
         <div>
           <div class="form-item webform-component webform-component-markup webform-component--contact-form">
@@ -2143,7 +2143,7 @@
 
 
                 <div class="prefix"></div>
-                <form action="/eta-origin" method="post" id="newsletter-subscribe-form"
+                <form action="/" method="post" id="newsletter-subscribe-form"
                       accept-charset="UTF-8">
                   <div>
                     <div class="form-item form-type-textfield form-item-email">
@@ -2177,7 +2177,7 @@
                    class="block block-avene-arrimable even">
 
 
-                <form action="/eta-origin" method="post" id="care-search-form" accept-charset="UTF-8">
+                <form action="/" method="post" id="care-search-form" accept-charset="UTF-8">
                   <div>
                     <div class="form-item form-type-textfield form-item-searchcare">
                       <input placeholder="ex : 雅漾舒护活泉水" type="text" id="edit-searchcare"

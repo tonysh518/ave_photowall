@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83767be6-7aa8-4538-b8d9-26f38287270a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/PhotoController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/PhotoController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rule.html" afterPath="$PROJECT_DIR$/rule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php" afterPath="$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winner.html" afterPath="$PROJECT_DIR$/winner.html" />
     </list>
     <ignored path="ave_photowall.iws" />
@@ -41,8 +37,8 @@
     <file path="/*.regexp" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391784830775" ignored="false" />
     <file path="/list.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391851915297" ignored="false" />
     <file path="/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392016146451" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659015362" ignored="false" />
-    <file path="/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391571123949" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392024432618" ignored="false" />
+    <file path="/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392024332004" ignored="false" />
     <file path="/filters.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391844470301" ignored="false" />
     <file path="/admin.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391851943979" ignored="false" />
     <file path="/photo.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391781642697" ignored="false" />
@@ -117,10 +113,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PhotoController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PhotoController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="39" selection-start="4731" selection-end="4731" vertical-scroll-proportion="-7.464286">
+            <state line="193" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="-2.2580926">
               <folding />
             </state>
           </provider>
@@ -138,10 +134,9 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1936" column="70" selection-start="0" selection-end="135724" vertical-scroll-proportion="-22.892857">
+            <state line="2312" column="0" selection-start="135702" selection-end="135702" vertical-scroll-proportion="-39.0">
               <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1392026955000" expanded="true" signature="9673:9731" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -150,18 +145,27 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2295" column="25" selection-start="110439" selection-end="110439" vertical-scroll-proportion="-27.464285">
+            <state line="216" column="44" selection-start="15352" selection-end="15352" vertical-scroll-proportion="-16.785715">
               <folding>
-                <marker date="1392023105000" expanded="true" signature="9559:9613" placeholder="..." />
+                <marker date="1392027114000" expanded="true" signature="9549:9603" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rule.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../theruges/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="13" selection-start="4693" selection-end="4693" vertical-scroll-proportion="302.32144">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rule.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1937" column="44" selection-start="114811" selection-end="114811" vertical-scroll-proportion="0.43274337">
+            <state line="22" column="33" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-14.928572">
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -172,7 +176,7 @@
       <file leaf-file-name="saetv2.ex.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="578" column="36" selection-start="14869" selection-end="14869" vertical-scroll-proportion="-14.107142">
+            <state line="569" column="20" selection-start="14642" selection-end="14642" vertical-scroll-proportion="-5.285714">
               <folding />
             </state>
           </provider>
@@ -181,7 +185,7 @@
       <file leaf-file-name="winner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/winner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2259" column="63" selection-start="134380" selection-end="134380" vertical-scroll-proportion="-10.678572">
+            <state line="248" column="58" selection-start="18341" selection-end="18341" vertical-scroll-proportion="-14.75">
               <folding />
             </state>
           </provider>
@@ -214,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/api/admin_asset/js/controllers/photo.js" />
         <option value="$PROJECT_DIR$/api/protected/views/layouts/admin.php" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/photo/list.html" />
         <option value="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
@@ -224,12 +227,13 @@
         <option value="$PROJECT_DIR$/api/admin_asset/js/controllers/winner.js" />
         <option value="$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php" />
         <option value="$PROJECT_DIR$/api/protected/controllers/PhotoController.php" />
-        <option value="$PROJECT_DIR$/winner.html" />
         <option value="$PROJECT_DIR$/js/lp.base.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/winner.html" />
         <option value="$PROJECT_DIR$/rule.html" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/../theruges/index.html" />
       </list>
     </option>
   </component>
@@ -509,11 +513,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="93" selection-start="2936" selection-end="2936" vertical-scroll-proportion="0.70552677" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/sinasdk/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="56" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
@@ -563,30 +562,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="578" column="36" selection-start="14869" selection-end="14869" vertical-scroll-proportion="-14.107142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/lp.base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="139" column="9" selection-start="5630" selection-end="5630" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/winner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2259" column="63" selection-start="134380" selection-end="134380" vertical-scroll-proportion="-10.678572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="39" selection-start="4731" selection-end="4731" vertical-scroll-proportion="-7.464286">
           <folding />
         </state>
       </provider>
@@ -598,31 +576,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="569" column="20" selection-start="14642" selection-end="14642" vertical-scroll-proportion="-5.285714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1936" column="70" selection-start="0" selection-end="135724" vertical-scroll-proportion="-22.892857">
+        <state line="2312" column="0" selection-start="135702" selection-end="135702" vertical-scroll-proportion="-39.0">
+          <folding>
+            <marker date="1392026955000" expanded="true" signature="9673:9731" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/winner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="248" column="58" selection-start="18341" selection-end="18341" vertical-scroll-proportion="-14.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="33" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-14.928572">
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2295" column="25" selection-start="110439" selection-end="110439" vertical-scroll-proportion="-27.464285">
+        <state line="216" column="44" selection-start="15352" selection-end="15352" vertical-scroll-proportion="-16.785715">
           <folding>
-            <marker date="1392023105000" expanded="true" signature="9559:9613" placeholder="..." />
+            <marker date="1392027114000" expanded="true" signature="9549:9603" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rule.html">
+    <entry file="file://$PROJECT_DIR$/../theruges/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1937" column="44" selection-start="114811" selection-end="114811" vertical-scroll-proportion="0.43274337">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="98" column="13" selection-start="4693" selection-end="4693" vertical-scroll-proportion="302.32144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="-2.2580926">
+          <folding />
         </state>
       </provider>
     </entry>
