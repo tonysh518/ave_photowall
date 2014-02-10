@@ -1,6 +1,6 @@
 AveneAdminController
 
-    .controller('WinnerPostCtrList', function($scope,$upload, $http, $modal,$location, $log, $routeParams, PhotoService, WinnerService, ROOT) {
+    .controller('WinnerPostCtrList', function($scope,$upload, $http, $modal,$location, $log, $routeParams, PhotoService, WinnerService, ROOT, ROOT_FOLDER) {
         $scope.winner = {};
         $scope.onFileSelect = function($files, type) {
             var file = $files[0];
@@ -11,7 +11,7 @@ AveneAdminController
             }).progress(function(evt) {
                     console.log('percent: ' + parseInt(100.0 * evt.loaded / evt.total));
                 }).success(function(data, status, headers, config) {
-                    $scope.winner[type+"_preview"] = ROOT + data.data;
+                    $scope.winner[type+"_preview"] = ROOT_FOLDER + data.data;
                     $scope.winner[type] = data.data;
                 });
         }

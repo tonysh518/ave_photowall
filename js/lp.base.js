@@ -119,9 +119,13 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
     $(window).resize(function(){
         var $symj_popup = $('.symj_popup');
         if($symj_popup.length == 0) return;
+        var src = $('.symj_popup .symj_img img').attr('src');
         var $img = $('.symj_popup .symj_img img');
-        var imgWidth = $img.width();
-        var imgHeight = $img.height();
+        var $imgload = $('#imgload');
+        $imgload.attr('src',src);
+        var imgWidth = $imgload.width();
+        var imgHeight = $imgload.height();
+        var ratio = imgWidth/imgHeight;
         var winWidth = $(window).width();
         var winHeight = $(window).height();
         var maxHeight = winHeight - 130;
@@ -129,10 +133,17 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         if(imgHeight > maxHeight) {
             imgHeight = maxHeight;
         }
+        if(imgWidth > maxWidth) {
+            imgWidth = maxWidth;
+        }
         if(winWidth <= 640)
         {
-            imgHeight = imgHeight * 1.5;
-            imgWidth = imgWidth * 1.5;
+            if(ratio > 0) {
+                imgWidth = imgHeight * ratio;
+            }
+            else {
+                imgHeight = imgWidth / ratio;
+            }
             $img.height(imgHeight).width(imgWidth);
             $symj_popup.css({width:imgWidth});
             var boxHeight = $symj_popup.height()+50;
@@ -140,8 +151,8 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         }
         else
         {
-            $img.height(imgHeight).width('auto');
-            imgWidth = $img.width();
+            imgWidth = imgHeight * ratio;
+            $img.height(imgHeight).width(imgWidth);
             $symj_popup.css({width:imgWidth});
             var boxHeight = $symj_popup.height()+50;
             $symj_popup.css({'margin-top':-boxHeight/2, 'margin-left':-imgWidth/2});
@@ -264,7 +275,7 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
                 LP.compile( 'node-zoom-template' , node , function( html ){
                     $('.symj_popup_wrap').append($(html).find('.symj_popup'));
                     $('.symj_popup_loading').fadeOut();
-                    var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'150%', 'opacity':0});
+                    var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'100%', 'opacity':0});
                     var $img = $('.symj_popup .symj_img img');
                     $img.ensureLoad(function(){
                         $(window).trigger('resize');
