@@ -22,6 +22,7 @@ AveneAdminController
                 name : $scope.winner.name,
                 avatar : $scope.winner.avatar,
                 tel : $scope.winner.tel,
+                url : $scope.winner.url,
                 photo : $scope.winner.photo,
                 prize : $scope.winner.prize,
                 prize_img : $scope.winner.prize_img
@@ -37,14 +38,14 @@ AveneAdminController
     })
 
 
-    .controller('WinnerListCtrList', function($scope,$upload, $http, $modal, $log, $routeParams, PhotoService, WinnerService, ROOT) {
+    .controller('WinnerListCtrList', function($scope,$upload, $http, $modal, $log, $routeParams, PhotoService, WinnerService, ROOT_FOLDER) {
         WinnerService.list(function(res){
             $scope.winners = res.data;
         });
 
         $scope.delete = function(winner) {
             var modalInstance = $modal.open({
-                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
+                templateUrl: ROOT_FOLDER+'admin_asset/tmp/dialog/delete.html',
                 controller: ConfirmModalCtrl
             });
             modalInstance.result.then(function () {
@@ -58,7 +59,7 @@ AveneAdminController
         }
     })
 
-    .controller('WinnerEditCtrList', function($scope,$upload, $http, $modal, $log, $routeParams, PhotoService, WinnerService, ROOT_FOLDER) {
+    .controller('WinnerEditCtrList', function($scope,$upload, $http,$location, $modal, $log, $routeParams, PhotoService, WinnerService, ROOT_FOLDER) {
         WinnerService.get($routeParams.wid,function(res){
             $scope.winner = res.data;
             $scope.winner.photo_preview = ROOT_FOLDER + $scope.winner.photo;
@@ -72,6 +73,7 @@ AveneAdminController
                 name : $scope.winner.name,
                 avatar : $scope.winner.avatar,
                 tel : $scope.winner.tel,
+                url : $scope.winner.url,
                 photo : $scope.winner.photo,
                 prize : $scope.winner.prize,
                 prize_img : $scope.winner.prize_img

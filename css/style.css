@@ -79,11 +79,14 @@
 .symj_winner_this_month .symj_info {float: left;margin:25px 15px 0 20px;width:200px;line-height:200%;}
 .symj_winner_this_month .symj_prize {margin-top:20px;}
 .symj_winner_this_month .symj_prize_img {float: left;width:170px;text-align:center;margin:15px 0 0;}
+.symj_winner_this_month .symj_winner_photo {position: relative;}
+.symj_winner_this_month .symj_winner_repost_count {display:block;background: url(../img/icon_winner_share.png) no-repeat top left;padding:0 10px 0 34px;height:30px;line-height:30px;color:#fff;position: absolute;bottom:4px;left:0;}
 
-
-
+.sysj_display_mobile {display: none;}
 
 @media only screen and (max-width: 640px) {
+    .sysj_display_pc {display: none;}
+    .sysj_display_mobile {display: block;font-size:24px;}
     .symj_breadcrumb {display: none;}
     .symj_nav {margin:0;height:57px;padding:0;}
     .symj_home_banner .symj_nav {padding:0;}
@@ -118,7 +121,20 @@
     .symj_winner_this_month .symj_winner_photo {float:none;width:520px;}
     .symj_winner_this_month .symj_winner_photo img {width:100%;}
     .symj_winner_this_month .symj_winner_this_month_right {float:none;margin:0;}
+    .symj_winner_this_month .symj_winner_this_month_right .sysj_this_month_tit {margin:0 0 30px 0;}
+    .symj_winner_this_month .symj_winner_this_month_right .symj_avatar {float:left;margin:0 0 0 123px;}
+    .symj_winner_this_month .symj_winner_this_month_right .symj_name {margin:20px 0 0 30px;float:left;}
+    .symj_winner_this_month .symj_info {float: none;width:auto;}
+    .symj_winner_this_month .symj_prize {float: left;width:270px;}
     .symj_winner_list {width:570px;}
+    .sysj_winner_item {font-size:24px;margin:0 0 45px 0;}
+    .sysj_winner_item .sysj_month {float:left;margin:15px 0 0;}
+    .sysj_winner_item .sysj_name {float:left;width:192px;margin:15px 0 0;}
+    .sysj_winner_item .sysj_avatar {float:left;margin:0 15px 0 20px;}
+    .sysj_winner_item .sysj_tel {float:left;margin:15px 0 0;}
+    .sysj_winner_item .sysj_prize_img {float:right;margin:0 30px 0 0;}
+    .sysj_winner_item .sysj_prize_tit {float:right;}
+    .sysj_winner_item .sysj_prize_tit {width:400px;text-align: center;}
 
 }
 

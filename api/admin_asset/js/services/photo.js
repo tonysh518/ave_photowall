@@ -2,7 +2,7 @@ AveneAdminServices.factory( 'PhotoService', function($http, ROOT) {
     return {
         list: function(param, success) {
 
-            $http.get(ROOT+'/photo/list', {
+            $http.get(ROOT+'/photo/list?'+new Date().getTime(), {
                 params: param,
                 cache: false
             })
@@ -14,7 +14,7 @@ AveneAdminServices.factory( 'PhotoService', function($http, ROOT) {
         },
 
         search: function(params, success) {
-            $http.get(ROOT+'/photo/search', {
+            $http.get(ROOT+'/photo/search?'+new Date().getTime(), {
                 params: params,
                 cache: false
             })

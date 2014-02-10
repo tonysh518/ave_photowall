@@ -85,20 +85,25 @@ class WinnerController extends Controller
 		if($this->getRole() != 2) {
 			return;
 		}
+
 		$request = Yii::app()->getRequest();
 		$month = $request->getPost('month');
 		$name = $request->getPost('name');
 		$avatar = $request->getPost('avatar');
 		$tel = $request->getPost('tel');
+		$url = $request->getPost('url');
 		$photo = $request->getPost('photo');
 		$prize = $request->getPost('prize');
 		$prize_img = $request->getPost('prize_img');
-
+		$urlParam = explode('/',$url);
+		$urlJson = json_decode(file_get_contents("http://api.t.sina.com.cn/queryid.json?mid=".end($urlParam)."&isBase62=1&type=1"));
 		$winner = new Winner();
 		$winner->month = $month;
 		$winner->name = $name;
 		$winner->avatar = $avatar;
 		$winner->tel = $tel;
+		$winner->url = $url;
+		$winner->mid = $urlJson->id;
 		$winner->photo = $photo;
 		$winner->prize = $prize;
 		$winner->prize_img = $prize_img;
@@ -124,15 +129,19 @@ class WinnerController extends Controller
 		$name = $request->getPost('name');
 		$avatar = $request->getPost('avatar');
 		$tel = $request->getPost('tel');
+		$url = $request->getPost('url');
 		$photo = $request->getPost('photo');
 		$prize = $request->getPost('prize');
 		$prize_img = $request->getPost('prize_img');
-
+		$urlParam = explode('/',$url);
+		$urlJson = json_decode(file_get_contents("http://api.t.sina.com.cn/queryid.json?mid=".end($urlParam)."&isBase62=1&type=1"));
 		$winner = Winner::model()->findByPk($wid);
 		$winner->month = $month;
 		$winner->name = $name;
 		$winner->avatar = $avatar;
 		$winner->tel = $tel;
+		$winner->url = $url;
+		$winner->mid = $urlJson->id;
 		$winner->photo = $photo;
 		$winner->prize = $prize;
 		$winner->prize_img = $prize_img;

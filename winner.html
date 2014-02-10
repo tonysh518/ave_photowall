@@ -2252,34 +2252,68 @@
 
 <!-- winner-thismonth-tpl -->
 <script type="text/tpl" id="winner-thismonth-template">
-    <div class="symj_winner_photo"><img src="api{{photo}}" /></div>
-    <div class="symj_winner_this_month_right">
-        <div class="sysj_this_month_tit"><img src="img/winner_{{month}}.gif" /></div>
-        <div class="symj_avatar"><img src="{{avatar}}" width="115" height="115" /></div>
-        <div class="symj_info">
-            <div class="symj_name">{{name}}</div>
-            <div class="symj_tel">{{tel}}</div>
-            <div class="symj_prize">获得奖品：{{prize}}</div>
+    <div class="sysj_display_mobile">
+        <div class="symj_winner_this_month_right">
+            <div class="sysj_this_month_tit"><img src="img/winner_{{month}}.gif" /></div>
+            <div class="symj_user_info">
+                <div class="symj_avatar"><img src="{{avatar}}" width="165" height="165" /></div>
+                <div class="symj_name">{{name}}<br/>{{tel}}</div>
+            </div>
+            <div class="clear"></div>
+            <div class="symj_info">
+                <div class="symj_prize">获得奖品：<br />{{prize}}</div>
+                <div class="symj_prize_img"><a target="_blank" href="{{url}}" class="symj_winner_repost_count"></a><img src="api{{prize_img}}" width="121" /></div>
+            </div>
         </div>
-        <div class="symj_prize_img"><img src="api{{prize_img}}" width="121" /></div>
+    </div>
+    <div class="symj_winner_photo"><a target="_blank" href="{{url}}" class="symj_winner_repost_count"></a><img src="api{{photo}}" /></div>
+    <div class="sysj_display_pc">
+        <div class="symj_winner_this_month_right">
+            <div class="sysj_this_month_tit"><img src="img/winner_{{month}}.gif" /></div>
+            <div class="symj_avatar"><img src="{{avatar}}" width="115" height="115" /></div>
+            <div class="symj_info">
+                <div class="symj_name">{{name}}</div>
+                <div class="symj_tel">{{tel}}</div>
+                <div class="symj_prize">获得奖品：{{prize}}</div>
+            </div>
+            <div class="symj_prize_img"><img src="api{{prize_img}}" width="121" /></div>
+        </div>
     </div>
 </script>
 
 
 <!-- winner-othermonth-tpl -->
 <script type="text/tpl" id="winner-othermonth-template">
-    <table>
+    <div class="sysj_display_pc">
+        <table>
+            {{#each winners}}
+            <tr>
+                <td width="110"><div class="sysj_month_tit"><img src="img/winner_{{month}}s.gif" /></div></td>
+                <td width="110"><img src="{{avatar}}" width="65" height="65" /></td>
+                <td width="140">{{name}}</td>
+                <td width="140">{{tel}}</td>
+                <td width="230">获得奖品：<br />{{prize}}</td>
+                <td><img src="api{{prize_img}}" height="80" /></td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    <div class="sysj_display_mobile">
         {{#each winners}}
-        <tr>
-            <td width="110"><div class="sysj_month_tit"><img src="img/winner_{{month}}s.gif" /></div></td>
-            <td width="110"><img src="{{avatar}}" width="65" height="65" /></td>
-            <td width="140">{{name}}</td>
-            <td width="140">{{tel}}</td>
-            <td width="230">获得奖品：<br />{{prize}}</td>
-            <td><img src="api{{prize_img}}" height="80" /></td>
-        </tr>
+        <div class="sysj_winner_item">
+            <div class="sysj_month"><img src="img/winner_{{month}}s.gif" /></div>
+            <div class="sysj_avatar"><img src="{{avatar}}" width="65" height="65" /></div>
+            <div class="sysj_name">{{name}}</div>
+            <div class="sysj_tel">{{tel}}</div>
+            <div class="clear"></div>
+            <div class="sysj_prize">
+                <div class="sysj_prize_img"><img src="api{{prize_img}}" height="80" /></div>
+                <div class="sysj_prize_tit">获得奖品：<br />{{prize}}</div>
+            </div>
+            <div class="clear"></div>
+        </div>
         {{/each}}
-    </table>
+    </div>
 </script>
 
 

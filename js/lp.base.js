@@ -307,6 +307,12 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             var thismonth = result.data.slice(0,1);
             LP.compile( 'winner-thismonth-template' , thismonth[0] , function( html ){
                 $('.symj_winner_this_month').append(html);
+                //get counts
+                api.ajax('getcounts', {id:thismonth[0].mid}, function( result ){
+                    if(result.success) {
+                        $('.symj_winner_repost_count').html(result.data[0].reposts);
+                    }
+                });
             });
             var othermonth = {};
             othermonth.winners = result.data.slice(1);

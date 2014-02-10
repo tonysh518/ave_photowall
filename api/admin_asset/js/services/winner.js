@@ -37,7 +37,7 @@ AveneAdminServices.factory( 'WinnerService', function($http, ROOT) {
 
         list: function( success) {
 
-            $http.get(ROOT+'/winner/list', {
+            $http.get(ROOT+'/winner/list?'+new Date().getTime(), {
                 cache: false
             })
             .success(function(data) {
@@ -49,7 +49,7 @@ AveneAdminServices.factory( 'WinnerService', function($http, ROOT) {
 
         get: function(wid, success) {
 
-            $http.get(ROOT+'/winner/getById', {
+            $http.get(ROOT+'/winner/getById?'+new Date().getTime(), {
                 params: {wid:wid},
                 cache: false
             })

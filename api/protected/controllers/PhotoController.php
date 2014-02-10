@@ -82,6 +82,10 @@ class PhotoController extends Controller
 			$criteria->condition='status=:status';
 			$criteria->params=array(':status'=>$status);
 		}
+    else {
+      $criteria->condition='status=:status';
+      $criteria->params=array(':status'=>1);
+    }
 		$criteria->limit = $pagenum;
 		$criteria->offset = ($page - 1 ) * $pagenum;
 		$criteria->order = 'datetime DESC';
@@ -172,10 +176,9 @@ class PhotoController extends Controller
 		$adminUid = Yii::app()->params['adminWeiboUid'];
 		$adminUser = User::model()->findByAttributes(array('sns_uid'=>$adminUid));
 		$access_token = $adminUser->access_token;
-    echo $access_token;
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
 		//TODO: Change to search hashtag api
-    $contents = $c->public_timeline();
+    $contents = $c->home_timeline();
 		if(isset($contents['error_code'])){
 			echo "The weibo access token is expired, please login again in back office.";
 			return;
