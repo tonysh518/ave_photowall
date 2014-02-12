@@ -151,6 +151,7 @@ class Photo extends CActiveRecord
 		}
 	}
 
+
 	private function fetchImage($weibo){
 		$imgPath = '/upload/'.date('Ymd').'/';
 		if (!is_dir(ROOT_PATH.$imgPath)) {
@@ -203,6 +204,77 @@ class Photo extends CActiveRecord
 		}
 	}
 
+	public function savePostImage($photoUpload, $weibo_id){
+		$imgPath = '/upload/'.date('Ymd').'/';
+		if (!is_dir(ROOT_PATH.$imgPath)) {
+			mkdir(ROOT_PATH.$imgPath, 0777, TRUE);
+		}
+		$filename = $imgPath.$weibo_id.'.jpg';
+		$save = $photoUpload->saveAs($filename);
+		if($save) {
+			$thumb = new EasyImage(ROOT_PATH.$filename);
+			$size = getimagesize(ROOT_PATH.$filename);
+			$w = 190;
+			$h = 190;
+			$s_w = $size[0];
+			$s_h = $size[1];
+
+			$r1 = $w / $s_w;
+			$r2 = $h / $s_h;
+			$widthSamller = TRUE;
+			if ($r1 > $r2) {
+				$r = $r1;
+			}
+			else {
+				$widthSamller = FALSE;
+				$r = $r2;
+			}
+			$t_w = $r * $s_w;
+			$t_h = $r * $s_h;
+
+			// 先等比例 resize
+			$thumb->resize($t_w, $t_h);
+			// 再裁剪
+			// 裁剪 多余的宽
+			if (!$widthSamller) {
+				$start_x = ($t_w - $w)/2;
+				$start_y = 0;
+				$thumb->crop($w, $h, $start_x, $start_y);
+			}
+			// 裁剪多余的 高
+			else {
+				$start_x = 0;
+				$start_y = ($t_h - $h);
+				$thumb->crop($w, $h, $start_x, $start_y);
+			}
+			$thumb->save(ROOT_PATH.$imgPath.$weibo_id.'_thumb.jpg');
+			return $filename;
+		}
+		else {
+			return false;
+		}
+	}
+
+
+	public function transferPhotos() {
+		$criteria=new CDbCriteria;
+		$criteria->select='*';
+		$criteria->condition='status=:status';
+		$criteria->params=array(':status'=>0);
+		$photos = $this->findAll($criteria);
+		foreach($photos as $photo) {
+			$res = $photo->attributes;
+			$res['image'] = new CurlFile('filename.png', 'image/png', 'filename.png');
+			$ch = curl_init();
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $res);
+			curl_setopt($ch, CURLOPT_URL, 'http://localhost/ave_photowall/photo/weibopost');
+			curl_setopt($ch, CURLOPT_POST, 1);
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+			$result = curl_exec($ch);
+			print_r($result);
+		}
+
+	}
 
 	/**
 	 * 获取统计信息

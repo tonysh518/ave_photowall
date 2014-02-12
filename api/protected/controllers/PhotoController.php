@@ -37,7 +37,7 @@ class PhotoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','list','fetch','post','ChangeStatus','GetStatistics','Search','getcounts'),
+				'actions'=>array('index','view','list','fetch','post','ChangeStatus','GetStatistics','Search','getcounts','transfer'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -109,6 +109,10 @@ class PhotoController extends Controller
 		$this->responseJSON($retdata, "success");
 	}
 
+	public function actionTransfer() {
+		Photo::model()->transferPhotos();
+	}
+
 	public function actionPost() {
 		if($this->isPost()){
 			if(Yii::app()->session['is_login']) {
@@ -154,6 +158,50 @@ class PhotoController extends Controller
 		else {
 			return $this->responseError("not post");
 		}
+	}
+
+
+	public function actionWeiboPost() {
+		if($this->isPost()){
+				$request = Yii::app()->getRequest();
+
+				$photo = new Photo();
+				$photo->weibo_id =$request->getPost('weibo_id');
+				$photo->url =$request->getPost('url');
+				$photo->screen_name =$request->getPost('screen_name');
+				$photo->gender =$request->getPost('gender');
+				$photo->location =$request->getPost('location');
+				$photo->sns_uid =$request->getPost('sns_uid');
+				$photo->avatar =$request->getPost('avatar');
+				$photo->content =$request->getPost('content');
+
+
+
+				$photoUpload = CUploadedFile::getInstanceByName("image");
+				if ($photoUpload) {
+					$mime = $photoUpload->getType();
+					$allowMime = array(
+						"image/gif", "image/png", "image/jpeg", "image/jpg"
+					);
+					if (!in_array($mime, $allowMime)) {
+						return $this->responseError("photo's media type is not allowed");
+					}
+					else
+					{
+						$photo->image = savePostImage($photoUpload, $photo->weibo_id);
+						if($photo->validate()) {
+							$photo->save();
+							return $this->responseJSON($photo,'success');
+						}
+					}
+				}
+				else {
+					return $this->responseError("not get photo");
+				}
+			}
+			else {
+				return $this->responseError("not login");
+			}
 	}
 
 
