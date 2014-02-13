@@ -204,75 +204,105 @@ class Photo extends CActiveRecord
 		}
 	}
 
-	public function savePostImage($photoUpload, $weibo_id){
-		$imgPath = '/upload/'.date('Ymd').'/';
-		if (!is_dir(ROOT_PATH.$imgPath)) {
-			mkdir(ROOT_PATH.$imgPath, 0777, TRUE);
-		}
-		$filename = $imgPath.$weibo_id.'.jpg';
-		$save = $photoUpload->saveAs($filename);
-		if($save) {
-			$thumb = new EasyImage(ROOT_PATH.$filename);
-			$size = getimagesize(ROOT_PATH.$filename);
-			$w = 190;
-			$h = 190;
-			$s_w = $size[0];
-			$s_h = $size[1];
 
-			$r1 = $w / $s_w;
-			$r2 = $h / $s_h;
-			$widthSamller = TRUE;
-			if ($r1 > $r2) {
-				$r = $r1;
-			}
-			else {
-				$widthSamller = FALSE;
-				$r = $r2;
-			}
-			$t_w = $r * $s_w;
-			$t_h = $r * $s_h;
+  public function fetchProxyContents($contents){
+    foreach($contents as $weibo) {
+      $oldPhoto = $this->findByAttributes(array('weibo_id'=>$weibo->weibo_id));
+      if($oldPhoto) {
+        continue;
+      }
+      // Fetch Image
+      $filename = $this->fetchProxyImage(Yii::app()->params['proxyServer'].$weibo->image,$weibo->weibo_id);
+      if($filename) {
+        $photo = new Photo();
+        $photo->weibo_id = $weibo->weibo_id;
+        $photo->url = $weibo->url;
+        $photo->image = $filename;
+        $photo->screen_name = $weibo->screen_name;
+        $photo->sns_uid = $weibo->sns_uid;
+        $photo->gender = $weibo->gender;
+        $photo->location = $weibo->location;
+        $photo->avatar = $weibo->avatar;
+        $photo->content = $weibo->content;
+        $photo->status = 0;
+        $photo->datetime = time();
+        $photo->save();
+      }
+    }
+  }
 
-			// 先等比例 resize
-			$thumb->resize($t_w, $t_h);
-			// 再裁剪
-			// 裁剪 多余的宽
-			if (!$widthSamller) {
-				$start_x = ($t_w - $w)/2;
-				$start_y = 0;
-				$thumb->crop($w, $h, $start_x, $start_y);
-			}
-			// 裁剪多余的 高
-			else {
-				$start_x = 0;
-				$start_y = ($t_h - $h);
-				$thumb->crop($w, $h, $start_x, $start_y);
-			}
-			$thumb->save(ROOT_PATH.$imgPath.$weibo_id.'_thumb.jpg');
-			return $filename;
-		}
-		else {
-			return false;
-		}
+	public function fetchProxyImage($photoUpload, $weibo_id){
+    $imgPath = '/upload/'.date('Ymd').'/';
+    if (!is_dir(ROOT_PATH.$imgPath)) {
+      mkdir(ROOT_PATH.$imgPath, 0777, TRUE);
+    }
+    $imageString = file_get_contents($photoUpload);
+    $filename = $imgPath.$weibo_id.'.jpg';
+    $save = file_put_contents(ROOT_PATH.$filename, $imageString);
+    if($save) {
+      $thumb = new EasyImage(ROOT_PATH.$filename);
+      $size = getimagesize(ROOT_PATH.$filename);
+      $w = 190;
+      $h = 190;
+      $s_w = $size[0];
+      $s_h = $size[1];
+
+      $r1 = $w / $s_w;
+      $r2 = $h / $s_h;
+      $widthSamller = TRUE;
+      if ($r1 > $r2) {
+        $r = $r1;
+      }
+      else {
+        $widthSamller = FALSE;
+        $r = $r2;
+      }
+      $t_w = $r * $s_w;
+      $t_h = $r * $s_h;
+
+      // 先等比例 resize
+      $thumb->resize($t_w, $t_h);
+      // 再裁剪
+      // 裁剪 多余的宽
+      if (!$widthSamller) {
+        $start_x = ($t_w - $w)/2;
+        $start_y = 0;
+        $thumb->crop($w, $h, $start_x, $start_y);
+      }
+      // 裁剪多余的 高
+      else {
+        $start_x = 0;
+        $start_y = ($t_h - $h);
+        $thumb->crop($w, $h, $start_x, $start_y);
+      }
+      $thumb->save(ROOT_PATH.$imgPath.$weibo_id.'_thumb.jpg');
+      return $filename;
+    }
+    else {
+      return false;
+    }
 	}
 
 
-	public function transferPhotos() {
+	public function getAllPhotos() {
 		$criteria=new CDbCriteria;
 		$criteria->select='*';
-		$criteria->condition='status=:status';
-		$criteria->params=array(':status'=>0);
+    $criteria->limit = 50;
+    $criteria->order = 'datetime DESC';
 		$photos = $this->findAll($criteria);
-		foreach($photos as $photo) {
-			$res = $photo->attributes;
-			$res['image'] = new CurlFile('filename.png', 'image/png', 'filename.png');
-			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $res);
-			curl_setopt($ch, CURLOPT_URL, 'http://localhost/ave_photowall/photo/weibopost');
-			curl_setopt($ch, CURLOPT_POST, 1);
-			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-			$result = curl_exec($ch);
-			print_r($result);
-		}
+    return $photos;
+
+//		foreach($photos as $photo) {
+//			$res = $photo->attributes;
+//			$res['image'] = new CurlFile('filename.png', 'image/png', 'filename.png');
+//			$ch = curl_init();
+//			curl_setopt($ch, CURLOPT_POSTFIELDS, $res);
+//			curl_setopt($ch, CURLOPT_URL, 'http://localhost/ave_photowall/photo/weibopost');
+//			curl_setopt($ch, CURLOPT_POST, 1);
+//			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+//			$result = curl_exec($ch);
+//			print_r($result);
+//		}
 
 	}
 

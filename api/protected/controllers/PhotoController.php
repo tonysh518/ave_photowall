@@ -37,7 +37,7 @@ class PhotoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','list','fetch','post','ChangeStatus','GetStatistics','Search','getcounts','transfer'),
+				'actions'=>array('index','view','list','fetch','post','ChangeStatus','GetStatistics','Search','getcounts','GetProxyData','FetchProxyData'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -107,10 +107,6 @@ class PhotoController extends Controller
 		}
 
 		$this->responseJSON($retdata, "success");
-	}
-
-	public function actionTransfer() {
-		Photo::model()->transferPhotos();
 	}
 
 	public function actionPost() {
@@ -226,7 +222,6 @@ class PhotoController extends Controller
 		$access_token = $adminUser->access_token;
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
     $contents = $c->search_topics("水漾美肌");
-    print_r($contents);
 		if(isset($contents['error_code'])){
 			echo "The weibo access token is expired, please login again in back office.";
 			return;
@@ -302,6 +297,23 @@ class PhotoController extends Controller
 		$count = Photo::model()->count($criteriaCount);
 		return $this->responseJSON($photos,$count);
 	}
+
+
+  public function actionGetProxyData() {
+    $retdata = Photo::model()->getAllPhotos();
+    $this->responseJSON($retdata, "success");
+  }
+
+
+  public function actionFetchProxyData() {
+    $dataJson = file_get_contents(Yii::app()->params['proxyServer'].'/photo/GetProxyData');
+    $data = json_decode($dataJson);
+    $contents = $data->data;
+    Photo::model()->fetchProxyContents($contents);
+    echo "Finished :)";
+  }
+
+
 
 	/**
 	 * Displays a particular model.

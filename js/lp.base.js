@@ -22,11 +22,14 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
                 LP.triggerAction('searchFriend');
             }
         })
+        .delegate('.photo_item', 'mouseenter', function() {
+            $(this).find('.node-item-overlay').fadeIn();
+        })
+        .delegate('.photo_item', 'mouseleave', function() {
+            $(this).find('.node-item-overlay').fadeOut();
+        })
 
     var nodeActions = {
-        // when current dom is main , and the recent ajax param orderby is 'like' or
-        // 'random' , the datetime would not be showed.
-        // pageParm.orderby == 'like' || pageParm.orderby == 'random' 此时不显示日历
         prependNode: function( $dom , nodes ){
             var aHtml = [];
             var lastDate = null;

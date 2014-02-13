@@ -2258,9 +2258,12 @@
 
 <!-- node-item-tpl -->
 <script type="text/tpl" id="node-item-template">
-    <div data-a="node" data-d="nid={{pid}}" class="photo_item symj_btn photo_item_{{pid}}">
-        <a href="http://weibo.com/{{link}}" target="_blank" class="symj_share_link"></a>
+    <div data-a="node" data-d="nid={{pid}}" class="photo_item photo_item_{{pid}}">
         <img src="./api{{thumb}}" width="190" />
+        <div class="node-item-overlay">
+            <div class="node-item-desc">{{content}}</div>
+            <a href="http://weibo.com/{{link}}" target="_blank" class="symj_share_link"></a>
+        </div>
     </div>
 </script>
 

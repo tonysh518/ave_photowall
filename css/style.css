@@ -13,8 +13,8 @@
 
 .symj_nav {height:30px;border-bottom: 1px solid #ebebeb;margin:0 35px 0 35px;padding-top:30px;}
 .symj_nav li {float:left;height:30px;}
-.symj_nav li a {background: url(../img/nav.gif) no-repeat;display: block;text-indent: -999em;width:297px;border-right:1px solid #d1d1d1;}
-.symj_nav li.symj_nav1 a {background-position:131px -36px;}
+.symj_nav li a {background: url(../img/nav.gif) no-repeat;display: block;text-indent: -999em;width:297px;height:14px;border-right:1px solid #d1d1d1;}
+.symj_nav li.symj_nav1 a {background-position:131px 0;}
 .symj_nav li.symj_nav2 a {background-position:121px -122px;}
 .symj_nav li.symj_nav3 a {background-position:123px -218px;border:none;}
 .symj_nav li.symj_nav1 a:hover {background-position:131px 3px;}
@@ -35,6 +35,8 @@
 #symj_list .photo_item {float:left;width:190px;height: 190px;overflow: hidden;position: relative;}
 .symj_list_more {background:#fff url(../img/btn_more.gif) no-repeat center;width:170px;height:40px;position: absolute;bottom:-37px;left:50%;margin-left:-85px;border: 1px solid #e8e8e8;border-top:1px solid #fff;}
 .symj_box2_loading {display:block;background: url(../img/loading.gif) no-repeat center;height:50px;}
+.node-item-overlay {display:none;position: absolute;width:100%;height:100%;top:0;left:0;background: #fff;opacity: 0.8;filter:alpha(opacity=80);}
+.node-item-overlay .node-item-desc {cursor:pointer;padding:30px 20px;line-height:130%;height:110px;overflow: hidden;}
 .symj_share_link {background: url(../img/btn_share.png) no-repeat;width:25px;height:25px;position: absolute;top:0;left:0;display: block;}
 .symj_share_link:hover {opacity:0.6;}
 
