@@ -4,6 +4,7 @@ class AdminController extends Controller
 {
 	public $defaultAction = 'index';
 	public $request;
+  public $layout = 'admin';
 
 	public function getRole() {
 		return Yii::app()->session['user_role'];
@@ -93,7 +94,6 @@ class AdminController extends Controller
 		$adminUser = User::model()->findByAttributes(array('sns_uid'=>$adminUid));
 		$access_token = $adminUser->access_token;
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
-		//TODO: Change to search hashtag api
 		$contents = $c->public_timeline();
 		if(isset($contents['error_code'])){
 			$o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
@@ -104,4 +104,22 @@ class AdminController extends Controller
 			$this->responseJSON(1, 'success');
 		}
 	}
+
+  public function actionAdminFetchStatus(){
+    if($this->getRole() != 2) {
+      return;
+    }
+    $adminUid = Yii::app()->params['adminWeiboUid'];
+    $adminUser = User::model()->findByAttributes(array('sns_uid'=>$adminUid));
+    $access_token = $adminUser->access_token;
+    $c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
+    $contents = $c->public_timeline();
+    if(isset($contents['error_code'])){
+      $o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
+      $weiboUrl = $o->getAuthorizeURL(WB_CALLBACK_URL);
+      $this->render('weibologin',array('weiboUrl'=>$weiboUrl));
+    }
+    else {
+    }
+  }
 }

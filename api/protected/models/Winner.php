@@ -18,6 +18,9 @@ class Winner extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+
+  public $detail;
+
 	public function tableName()
 	{
 		return 'Winner';
@@ -37,7 +40,7 @@ class Winner extends CActiveRecord
 			array('tel', 'length', 'max'=>16),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('wid, month, photo,url,mid, name, avatar, tel, prize, prize_img', 'safe', 'on'=>'search'),
+			array('wid, month, photo, url ,mid, name, avatar, tel, prize, prize_img', 'safe', 'on'=>'search'),
 		);
 	}
 

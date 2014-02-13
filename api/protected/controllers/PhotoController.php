@@ -221,7 +221,7 @@ class PhotoController extends Controller
 		$adminUser = User::model()->findByAttributes(array('sns_uid'=>$adminUid));
 		$access_token = $adminUser->access_token;
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
-    $contents = $c->search_topics("水漾美肌");
+    $contents = $c->search_topics("#水漾美肌#");
 		if(isset($contents['error_code'])){
 			echo "The weibo access token is expired, please login again in back office.";
 			return;

@@ -1933,7 +1933,8 @@
           <li class="symj_nav3"><a href="winner.html">中奖名单</a></li>
         </ul>
       </div>
-      <a class="symj_home_btn1 symj_btn" target="_blank" href="http://huati.weibo.com/794066"></a>
+      <a class="symj_home_btn1 symj_btn sysj_display_pc" target="_blank" href="http://huati.weibo.com/794066"></a>
+      <a class="symj_home_btn1 symj_btn sysj_display_mobile" target="_blank" href="http://s.weibo.com/weibo/水漾美肌?nodup=1&Refer=huati"></a>
       <a class="symj_home_btn2 symj_btn" href="winner.html"></a>
     </div>
     <div class="symj_box2 symj_list_box">
@@ -2143,7 +2144,7 @@
 
 
                 <div class="prefix"></div>
-                <form action="/" method="post" id="newsletter-subscribe-form"
+                <form action="/eta-origin" method="post" id="newsletter-subscribe-form"
                       accept-charset="UTF-8">
                   <div>
                     <div class="form-item form-type-textfield form-item-email">
@@ -2177,7 +2178,7 @@
                    class="block block-avene-arrimable even">
 
 
-                <form action="/" method="post" id="care-search-form" accept-charset="UTF-8">
+                <form action="/eta-origin" method="post" id="care-search-form" accept-charset="UTF-8">
                   <div>
                     <div class="form-item form-type-textfield form-item-searchcare">
                       <input placeholder="ex : 雅漾舒护活泉水" type="text" id="edit-searchcare"
@@ -2258,9 +2259,12 @@
 
 <!-- node-item-tpl -->
 <script type="text/tpl" id="node-item-template">
-  <div data-a="node" data-d="nid={{pid}}" class="photo_item symj_btn photo_item_{{pid}}">
-    <a href="http://weibo.com/{{link}}" target="_blank" class="symj_share_link"></a>
+  <div data-a="node" data-d="nid={{pid}}" class="photo_item photo_item_{{pid}}">
     <img src="./api{{thumb}}" width="190" />
+    <div class="node-item-overlay">
+      <div class="node-item-desc">{{shortcontent}}</div>
+    </div>
+    <a href="http://v.t.sina.com.cn/share/share.php?title={{sharecontent}}&pic=http://www.eau-thermale-avene.cn/photowall/test/api{{image}}" target="_blank" class="symj_share_link"></a>
   </div>
 </script>
 
@@ -2274,7 +2278,7 @@
       <div class="symj_popup_right" data-a="next"></div>
       <div class="symj_popup_close symj_btn" data-a="close_pop"></div>
       <div class="symj_img"><img src="./api{{image}}" /></div>
-      <a href="http://weibo.com/{{link}}" target="_blank" class="symj_inner_share_link"></a>
+      <a href="http://v.t.sina.com.cn/share/share.php?title={{sharecontent}}&pic=http://www.eau-thermale-avene.cn/photowall/test/api{{image}}" target="_blank" class="symj_inner_share_link"></a>
       <div class="symj_description">
         {{content}}
       </div>

@@ -57,7 +57,15 @@ class WinnerController extends Controller
 		$criteria->offset = ($page - 1 ) * $pagenum;
 		$criteria->order = 'month DESC';
 		$winners = $winner->findAll($criteria);
-		$this->responseJSON($winners, "success");
+    $res = array();
+    foreach($winners as $winner) {
+      $res[] = $winner->attributes;
+    }
+    $topPhoto = Photo::model()->findByAttributes(array('weibo_id'=>$winners[0]->mid));
+    if($topPhoto) {
+      $res[0]['detail'] = $topPhoto->attributes;
+    }
+		$this->responseJSON($res, "success");
 	}
 
 	public function actionUploadImage() {

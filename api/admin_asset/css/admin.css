@@ -16,7 +16,7 @@ a:hover {color:#888;}
 .clear{+zoom:1;}
 .clear:before,
 .clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
-.needlogin {display:none;position: fixed;width:400px;top:0;right:100px;margin-left:-200px;background:#dc0000;color:#fff;padding:5px 20px;}
+.needlogin {display:none;width:400px;background:#dc0000;color:#fff;padding:5px 20px;}
 .needlogin a {color:#fff;font-weight: bold;font-style:italic;}
 .needlogin-true {display: block;}
 .header {height:57px;background:#666;position: relative;padding-top:1px;}

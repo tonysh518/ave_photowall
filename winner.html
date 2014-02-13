@@ -2248,7 +2248,7 @@
 </div>
 <div id="bg_parallax"></div>
 
-
+<img id="imgload" style="display: none;" />
 
 <!-- winner-thismonth-tpl -->
 <script type="text/tpl" id="winner-thismonth-template">
@@ -2266,7 +2266,15 @@
             </div>
         </div>
     </div>
-    <div class="symj_winner_photo"><a target="_blank" href="{{url}}" class="symj_winner_repost_count"></a><img src="api{{photo}}" /></div>
+    <div class="symj_winner_photo" data-a="node_winner">
+        <img src="api{{photo}}" />
+        <div class="symj_winner_photo_overlay">
+            <div class="symj_winner_photo_overlay_desc">
+                {{detail.content}}
+            </div>
+        </div>
+        <a target="_blank" href="http://v.t.sina.com.cn/share/share.php?title={{detail.sharecontent}}&pic=http://www.eau-thermale-avene.cn/photowall/test/api{{detail.image}}" class="symj_winner_repost_count"></a>
+    </div>
     <div class="sysj_display_pc">
         <div class="symj_winner_this_month_right">
             <div class="sysj_this_month_tit"><img src="img/winner_{{month}}.gif" /></div>
@@ -2316,6 +2324,21 @@
     </div>
 </script>
 
+<!-- node-item-tpl -->
+<script type="text/tpl" id="node-zoom-template">
+    <div class="symj_popup_wrap">
+        <div class="symj_overlay" data-a="close_pop"></div>
+        <div class="symj_popup_loading"></div>
+        <div class="symj_popup">
+            <div class="symj_popup_close symj_btn" data-a="close_pop"></div>
+            <div class="symj_img"><img src="./api{{image}}" /></div>
+            <a href="http://v.t.sina.com.cn/share/share.php?title={{sharecontent}}&pic=http://www.eau-thermale-avene.cn/photowall/test/api{{image}}" target="_blank" class="symj_inner_share_link"></a>
+            <div class="symj_description">
+                {{content}}
+            </div>
+        </div>
+    </div>
+</script>
 
 <!--//all tpls end -->
 <script type="text/javascript" src="./js/sea/sea-debug.js" data-config="../config"></script>

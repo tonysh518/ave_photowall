@@ -28,6 +28,12 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         .delegate('.photo_item', 'mouseleave', function() {
             $(this).find('.node-item-overlay').fadeOut();
         })
+        .delegate('.symj_winner_photo', 'mouseenter', function() {
+            $(this).find('.symj_winner_photo_overlay').fadeIn();
+        })
+        .delegate('.symj_winner_photo', 'mouseleave', function() {
+            $(this).find('.symj_winner_photo_overlay').fadeOut();
+        })
 
     var nodeActions = {
         prependNode: function( $dom , nodes ){
@@ -50,6 +56,10 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             $dom.data('nodes' , newNodes.concat( cache ) );
             $.each( newNodes , function( index , node ){
                 node.thumb = node.image.replace('.jpg','_thumb.jpg');
+                node.sharecontent = encodeURI(node.content).replace(new RegExp('#',"gm"),'%23')
+                if(node.content.length > 100) {
+                    node.shortcontent = node.content.substring(0,100)+'...';
+                }
                 LP.compile( 'node-item-template' ,
                     node ,
                     function( html ){
@@ -77,6 +87,11 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
 
             $.each( nodes , function( index , node ){
                 node.thumb = node.image.replace('.jpg','_thumb.jpg');
+                node.sharecontent = encodeURI(node.content).replace(new RegExp('#',"gm"),'%23');
+                node.shortcontent = node.content;
+                if(node.content.length > 100) {
+                    node.shortcontent = node.content.substring(0,100)+'...';
+                }
                 LP.compile( 'node-item-template' ,
                     node ,
                     function( html ){
@@ -145,7 +160,6 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
                 imgHeight = imgWidth / ratio;
             }
             else {
-                console.log(imgHeight);
                 imgWidth = imgHeight * ratio;
             }
             $img.height(imgHeight).width(imgWidth);
@@ -212,6 +226,7 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         _currentNodeIndex = $(this).prevAll().length;
         var nodes = $('#symj_list').data('nodes');
         var node = nodes[ _currentNodeIndex ];
+        node.sharecontent = encodeURI(node.content).replace(new RegExp('#',"gm"),'%23');
         LP.compile( 'node-zoom-template' , node , function( html ){
 
             $('body').append(html);
@@ -246,6 +261,7 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         if( node ){
             $('.symj_popup').animate({left:'-50%'},400,'easeInQuart',function(){
                 $(this).remove();
+                node.sharecontent = encodeURI(node.content).replace(new RegExp('#',"gm"),'%23');
                 LP.compile( 'node-zoom-template' , node , function( html ){
                     $('.symj_popup_wrap').append($(html).find('.symj_popup'));
                     $('.symj_popup_loading').fadeIn();
@@ -276,6 +292,7 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         if( node ){
             $('.symj_popup').animate({left:'150%'},400,'easeInQuart',function(){
                 $(this).remove();
+                node.sharecontent = encodeURI(node.content).replace(new RegExp('#',"gm"),'%23');
                 LP.compile( 'node-zoom-template' , node , function( html ){
                     $('.symj_popup_wrap').append($(html).find('.symj_popup'));
                     $('.symj_popup_loading').fadeOut();
@@ -306,6 +323,33 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         });
     });
 
+    LP.action('node_winner', function(){
+        var node = $('.symj_winner_this_month').data('winner');
+        node.detail.sharecontent = encodeURI(node.detail.content).replace(new RegExp('#',"gm"),'%23');
+        LP.compile( 'node-zoom-template' , node.detail , function( html ){
+            $('body').append(html);
+            var $symj_popup = $('.symj_popup').css('opacity',0);
+            var $img = $('.symj_popup .symj_img img');
+            $img.ensureLoad(function(){
+                $(window).trigger('resize');
+                if(isIe6) {
+                    var top = $(window).scrollTop() +  $(window).height()/2;
+                }
+                else {
+                    top = '50%';
+                }
+                $symj_popup.animate({opacity:1,top:top},800,'easeOutQuart');
+                $('.symj_popup_loading').fadeOut();
+            });
+            //get counts
+            api.ajax('getcounts', {id:node.detail.weibo_id}, function( result ){
+                if(result.success) {
+                    $('.symj_inner_share_link').html(result.data[0].reposts);
+                }
+            });
+        });
+    });
+
     LP.action('load_more', function(){
         $loading.fadeIn();
         var pageParam = $('#symj_list').data('param');
@@ -320,8 +364,9 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
     LP.action('winner_list', function(){
         api.ajax('winnerList', function( result ){
             var thismonth = result.data.slice(0,1);
+            thismonth[0].detail.sharecontent = encodeURI(thismonth[0].detail.content).replace(new RegExp('#',"gm"),'%23');
             LP.compile( 'winner-thismonth-template' , thismonth[0] , function( html ){
-                $('.symj_winner_this_month').append(html);
+                $('.symj_winner_this_month').append(html).data('winner', thismonth[0]);
                 //get counts
                 api.ajax('getcounts', {id:thismonth[0].mid}, function( result ){
                     if(result.success) {
@@ -361,7 +406,6 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             setInterval(function(){
                 LP.triggerAction('addnew');
             },1000 * 60 * 5);
-
         }
     }
 

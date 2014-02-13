@@ -14,12 +14,12 @@
 .symj_nav {height:30px;border-bottom: 1px solid #ebebeb;margin:0 35px 0 35px;padding-top:30px;}
 .symj_nav li {float:left;height:30px;}
 .symj_nav li a {background: url(../img/nav.gif) no-repeat;display: block;text-indent: -999em;width:297px;height:14px;border-right:1px solid #d1d1d1;}
-.symj_nav li.symj_nav1 a {background-position:131px 0;}
-.symj_nav li.symj_nav2 a {background-position:121px -122px;}
-.symj_nav li.symj_nav3 a {background-position:123px -218px;border:none;}
-.symj_nav li.symj_nav1 a:hover {background-position:131px 3px;}
-.symj_nav li.symj_nav2 a:hover {background-position:121px -75px;}
-.symj_nav li.symj_nav3 a:hover {background-position:123px -171px;border:none;}
+.symj_nav li.symj_nav1 a {background-position:129px 0;}
+.symj_nav li.symj_nav2 a {background-position:118px -39px;}
+.symj_nav li.symj_nav3 a {background-position:117px -79px;border:none;}
+.symj_nav li.symj_nav1 a:hover {background-position:129px -118px;}
+.symj_nav li.symj_nav2 a:hover {background-position:118px -158px;}
+.symj_nav li.symj_nav3 a:hover {background-position:117px -197px;border:none;}
 .symj_nav li.active {background: url(../img/nav_bottom.gif) no-repeat bottom;}
 
 /* Home Used
@@ -53,7 +53,7 @@
 
 /* Rule Used
 ================================================================================================= */
-.symj_rule1 {background:url(../img/rule1.gif) no-repeat;width:902px;height:284px;margin:40px auto 0 auto;}
+.symj_rule1 {background:url(../img/rule1.gif) no-repeat;width:902px;height:287px;margin:40px auto 0 auto;}
 .symj_rule3_tit {background: url(../img/rule_tit3.gif) no-repeat;height:32px;width:902px;margin:50px auto 0 auto;}
 .symj_rule_join_btn {display:block;background: url(../img/btn_join.gif) no-repeat;width:173px;height:40px;margin:30px auto;}
 .symj_rule4,.symj_rule5 {padding-top:18px;}
@@ -83,6 +83,8 @@
 .symj_winner_this_month .symj_prize_img {float: left;width:170px;text-align:center;margin:15px 0 0;}
 .symj_winner_this_month .symj_winner_photo {position: relative;}
 .symj_winner_this_month .symj_winner_repost_count {display:block;background: url(../img/icon_winner_share.png) no-repeat top left;padding:0 10px 0 34px;height:30px;line-height:30px;color:#fff;position: absolute;bottom:4px;left:0;}
+.symj_winner_photo_overlay {display:none;position: absolute;top:0;left:0;background:#fff;width: 100%;height: 100%;opacity:0.8;filter:alpha(opacity=80);}
+.symj_winner_photo_overlay .symj_winner_photo_overlay_desc {cursor:pointer;padding:30px 20px;line-height:130%;height:116px;overflow: hidden;}
 
 .sysj_display_mobile {display: none;}
 
@@ -96,7 +98,7 @@
     .symj_nav li.active {background: none;}
     .symj_nav li.active a {border-bottom:2px solid #f58774;}
     .symj_nav li.symj_nav3 {border: none;}
-    .symj_nav li a {background: none;text-indent:0;font-size:24px;width:102px;border:none;color:#999;margin:0 auto;padding:10px 0;text-align: center;}
+    .symj_nav li a {height:auto;background: none;text-indent:0;font-size:24px;width:102px;border:none;color:#999;margin:0 auto;padding:10px 0;text-align: center;}
     .symj_box2_border {border: none;background: none;}
     .symj_home_banner {background: url(../img/m/topbanner.jpg) no-repeat;width:581px;height:986px;margin-left:-10px;}
     .symj_home_btn1 {background: url(../img/m/btn_join.gif) no-repeat;position: absolute;width:223px;height:60px;bottom:465px;left:165px;}
@@ -110,7 +112,7 @@
     .symj_description {font-size:22px;}
 
     .symj_box2 {width:581px;margin-left:-10px;}
-    .symj_rule1 {background:url(../img/m/rule1.gif) no-repeat;width:581px;height:940px;margin:40px auto 0 auto;}
+    .symj_rule1 {background:url(../img/m/rule1.gif) no-repeat;width:581px;height:954px;margin:40px auto 0 auto;}
     .symj_rule3_tit {background: url(../img/m/rule_tit3.gif) no-repeat;height:37px;width:581px;margin:50px auto 0 auto;}
     .symj_preview {width:580px;border: none;margin-left:0px;}
     .symj_rule_join_btn {background: url(../img/m/btn_join.gif) no-repeat;width:223px;height:60px;}

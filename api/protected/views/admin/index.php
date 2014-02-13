@@ -10,9 +10,6 @@
   </ul>
 </div>
 
-<div class="needlogin needlogin-{{status}}">
-	<a href="{{loginurl}}" target="_blank">The weibo token is expired, the fetch function stopped, you need login weibo using Avene account again!</a>
-</div>
 
 <div class="page">
   <ul ng-show="showSubNav" sub-nav class="sub-nav nav nav-pills">
@@ -26,6 +23,13 @@
 
 
   <div ng-view></div>
+  <div class="clear"></div>
+  <div class="needlogin needlogin-{{status}}">
+    <a href="{{loginurl}}" target="_blank">The weibo token is expired, the fetch function stopped, you need login weibo using Avene account again!</a>
+  </div>
+  <div>
+    <iframe src="http://photowall.ffshtest.net/api/admin/AdminFetchStatus" frameborder="0" scrolling="no" width="400" height="90"></iframe>
+  </div>
 </div>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/lib/angular/angular.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/lib/angular/angular-route.js"></script>
