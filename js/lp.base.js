@@ -241,12 +241,12 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         var nodes = $('#symj_list').data('nodes');
         var node = nodes[ _currentNodeIndex ];
         if( node ){
-            $('.symj_popup').animate({left:'150%'},400,'easeInQuart',function(){
+            $('.symj_popup').animate({left:'-50%'},400,'easeInQuart',function(){
                 $(this).remove();
                 LP.compile( 'node-zoom-template' , node , function( html ){
                     $('.symj_popup_wrap').append($(html).find('.symj_popup'));
                     $('.symj_popup_loading').fadeIn();
-                    var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'-50%', 'opacity':0});
+                    var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'100%', 'opacity':0});
                     var $img = $('.symj_popup .symj_img img');
                     $img.ensureLoad(function(){
                         $(window).trigger('resize');
@@ -271,12 +271,12 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         var nodes = $('#symj_list').data('nodes');
         var node = nodes[ _currentNodeIndex ];
         if( node ){
-            $('.symj_popup').animate({left:'-50%'},400,'easeInQuart',function(){
+            $('.symj_popup').animate({left:'150%'},400,'easeInQuart',function(){
                 $(this).remove();
                 LP.compile( 'node-zoom-template' , node , function( html ){
                     $('.symj_popup_wrap').append($(html).find('.symj_popup'));
                     $('.symj_popup_loading').fadeOut();
-                    var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'100%', 'opacity':0});
+                    var $symj_popup = $('.symj_popup').css({'top':'50%', 'left':'-50%', 'opacity':0});
                     var $img = $('.symj_popup .symj_img img');
                     $img.ensureLoad(function(){
                         $(window).trigger('resize');

@@ -1,7 +1,7 @@
 <form name="form">
     <div class="winner-form">
         <div class="form-group">
-            <label>Weibo Name</label>
+            <label>Month</label>
             <select class="form-control" name="month" ng-model="winner.month" required>
                 <option value="">Select Month</option>
                 <option value="2">2</option>
@@ -64,7 +64,7 @@
             <img height="80" src="{{winner.prize_img_preview}}" ng-show="winner.prize_img_preview" />
             <div class="error" ng-hide="winner.prize_img_preview">Please upload prize image</div>
         </div>
-
+        <br />
         <button ng-disabled="form.$invalid || isUnchanged(winner)" class="btn btn-info" ng-click="submit()">Save The Winner</button>
         <a class="btn btn-default" ng-href="#/winner/list">Cancel</a>
     </div>

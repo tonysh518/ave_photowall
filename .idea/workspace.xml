@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83767be6-7aa8-4538-b8d9-26f38287270a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rule.html" afterPath="$PROJECT_DIR$/rule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winner.html" afterPath="$PROJECT_DIR$/winner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/views/admin/login.php" afterPath="$PROJECT_DIR$/api/protected/views/admin/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/admin_asset/tmp/winner/post.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/winner/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ave_photowall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392006577569" ignored="false" />
+    <file path="/Dummy.txt" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392081781155" ignored="false" />
     <file path="/PhotoController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392020559618" ignored="false" />
-    <file path="/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391782275401" ignored="false" />
+    <file path="/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392210762890" ignored="false" />
     <file path="/a.dummy" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391491236362" ignored="false" />
     <file path="/Photo.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391831563820" ignored="false" />
     <file path="/index.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392023098116" ignored="false" />
@@ -21,14 +21,14 @@
     <file path="/rule.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392023127229" ignored="false" />
     <file path="/winner.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391850291501" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/web/css/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391516409921" ignored="false" />
-    <file path="/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391697644790" ignored="false" />
+    <file path="/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392256862582" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/web/login.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391515697680" ignored="false" />
     <file path="/login.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391515697266" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/static/js/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391526499591" ignored="false" />
-    <file path="/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392022171185" ignored="false" />
+    <file path="/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392256716294" ignored="false" />
     <file path="/WinnerController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391825880860" ignored="false" />
     <file path="/api.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391834049198" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392016257026" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392190274296" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/static/js/lp.core.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391567135498" ignored="false" />
     <file path="/scarf.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391573296971" ignored="false" />
     <file path="/controllers.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391844938348" ignored="false" />
@@ -36,9 +36,9 @@
     <file path="/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391858131637" ignored="false" />
     <file path="/*.regexp" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391784830775" ignored="false" />
     <file path="/list.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391851915297" ignored="false" />
-    <file path="/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392016146451" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392024432618" ignored="false" />
-    <file path="/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392024332004" ignored="false" />
+    <file path="/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392190263613" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255994921" ignored="false" />
+    <file path="/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392190622962" ignored="false" />
     <file path="/filters.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391844470301" ignored="false" />
     <file path="/admin.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391851943979" ignored="false" />
     <file path="/photo.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391781642697" ignored="false" />
@@ -47,7 +47,7 @@
     <file path="/style_ie6.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391588450631" ignored="false" />
     <file path="/directives.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391847363843" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/sso.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391614277359" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391784085951" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391652336683" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/simplesamlphp/config/config.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391614524854" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/config/config.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391702877283" ignored="false" />
@@ -60,18 +60,18 @@
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/components/UserIdentity.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391654717879" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/.htaccess" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391692891682" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/index.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391691650114" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/js/api.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391698031395" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/js/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391698448574" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/css/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391697648396" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/CountryController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391658970658" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/api.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392183957691" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392256716624" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/css/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392256863681" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/CountryController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392175128162" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/FlagController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391658974403" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/UploadsController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391658984446" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/UploadsController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392175128162" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/FlagAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659000604" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/LoginForm.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659004025" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/LikeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659020556" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/CountryAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659024192" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/TagController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659053462" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659611206" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392104307770" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/tool/php2po.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391663339196" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/tool/string.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391667450429" ignored="false" />
     <file path="/string.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391667431698" ignored="false" />
@@ -81,19 +81,37 @@
     <file path="$PROJECT_DIR$/../bank_wall/tool/po2json.py" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391668164465" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/i18.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391668872259" ignored="false" />
     <file path="/i18.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391668868558" ignored="false" />
-    <file path="/en.po" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391695666066" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391692886608" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/include/tpl.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391697497168" ignored="false" />
+    <file path="/en.po" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392100383816" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/include/tpl.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392256807263" ignored="false" />
     <file path="/.htaccess" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391692891682" ignored="false" />
-    <file path="/tpl.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391697483837" ignored="false" />
+    <file path="/tpl.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392256807263" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/tool/en.json" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391695673360" ignored="false" />
-    <file path="/post.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392002358579" ignored="false" />
+    <file path="/post.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392091653207" ignored="false" />
     <file path="/winner.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391851691719" ignored="false" />
     <file path="/saetv2.ex.class.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392020324830" ignored="false" />
     <file path="$PROJECT_DIR$/../PyGmail-master/gmail.py" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392014998838" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/avene_redness/0110/css/style.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392014286682" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/text.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392015991344" ignored="false" />
-    <file path="/text.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392015991344" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/text.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392175128162" ignored="false" />
+    <file path="/text.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392110585348" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/ie8.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="/login.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392091375883" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/lang/en.po" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392175128162" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/lang/fr.po" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392100592260" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/lang/fr.json" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392100683819" ignored="false" />
+    <file path="/UploadsController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392113969945" ignored="false" />
+    <file path="/CountryController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392105027450" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/json/country.json" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392105186690" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/plugin/jquery.mousewheel.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392186975244" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/PyGmail/run.sh" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="/run.sh" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392191093266" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.3" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.2" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.4" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.5" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/views/user/post.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="/post.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392210922183" ignored="false" />
+    <file path="/ie8.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392211090125" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,88 +131,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PhotoController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/winner/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="193" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="-2.2580926">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="lp.base.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="139" selection-start="9403" selection-end="9403" vertical-scroll-proportion="0.0">
+            <state line="336" column="39" selection-start="13126" selection-end="13126" vertical-scroll-proportion="0.3347566">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/winner/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2312" column="0" selection-start="135702" selection-end="135702" vertical-scroll-proportion="-39.0">
-              <folding>
-                <marker date="1392026955000" expanded="true" signature="9673:9731" placeholder="..." />
-              </folding>
+            <state line="32" column="60" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-21.714285">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/api/protected/views/admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="44" selection-start="15352" selection-end="15352" vertical-scroll-proportion="-16.785715">
-              <folding>
-                <marker date="1392027114000" expanded="true" signature="9549:9603" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../theruges/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="13" selection-start="4693" selection-end="4693" vertical-scroll-proportion="302.32144">
+            <state line="14" column="6" selection-start="571" selection-end="571" vertical-scroll-proportion="-9.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rule.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rule.html">
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/views/admin/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="33" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-14.928572">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="saetv2.ex.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="569" column="20" selection-start="14642" selection-end="14642" vertical-scroll-proportion="-5.285714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="winner.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/winner.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="248" column="58" selection-start="18341" selection-end="18341" vertical-scroll-proportion="-14.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="9" selection-start="5630" selection-end="5630" vertical-scroll-proportion="0.0">
+            <state line="11" column="12" selection-start="580" selection-end="580" vertical-scroll-proportion="-7.464286">
               <folding />
             </state>
           </provider>
@@ -218,22 +194,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/api/protected/views/layouts/admin.php" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/photo/list.html" />
         <option value="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
         <option value="$PROJECT_DIR$/api/sinasdk/config.php" />
         <option value="$PROJECT_DIR$/api/protected/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/api/admin_asset/tmp/winner/post.html" />
         <option value="$PROJECT_DIR$/api/admin_asset/js/controllers/winner.js" />
         <option value="$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php" />
         <option value="$PROJECT_DIR$/api/protected/controllers/PhotoController.php" />
-        <option value="$PROJECT_DIR$/js/lp.base.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/winner.html" />
         <option value="$PROJECT_DIR$/rule.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/../theruges/index.html" />
+        <option value="$PROJECT_DIR$/api/protected/views/admin/login.php" />
+        <option value="$PROJECT_DIR$/api/admin_asset/tmp/winner/post.html" />
+        <option value="$PROJECT_DIR$/js/lp.base.js" />
       </list>
     </option>
   </component>
@@ -315,60 +291,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ave_photowall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avene_photowall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ave_photowall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avene_photowall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ave_photowall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avene_photowall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -437,7 +359,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19162494" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19344561" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -513,120 +435,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/sinasdk/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="56" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/winner/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/photo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.36832896">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/winner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="801" selection-end="801" vertical-scroll-proportion="0.24338172">
-          <folding />
-        </state>
+        <state line="15" column="19" selection-start="801" selection-end="801" vertical-scroll-proportion="0.24338172" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="412" selection-end="412" vertical-scroll-proportion="0.34908137">
-          <folding />
-        </state>
+        <state line="21" column="17" selection-start="412" selection-end="412" vertical-scroll-proportion="0.34908137" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="9" selection-start="5630" selection-end="5630" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="139" selection-start="9403" selection-end="9403" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="569" column="20" selection-start="14642" selection-end="14642" vertical-scroll-proportion="-5.285714">
+        <state line="206" column="29" selection-start="5672" selection-end="5672" vertical-scroll-proportion="0.23272091">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2312" column="0" selection-start="135702" selection-end="135702" vertical-scroll-proportion="-39.0">
+        <state line="2312" column="0" selection-start="135702" selection-end="135702" vertical-scroll-proportion="0.899115">
           <folding>
-            <marker date="1392026955000" expanded="true" signature="9673:9731" placeholder="..." />
+            <marker date="1392026955000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/winner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="248" column="58" selection-start="18341" selection-end="18341" vertical-scroll-proportion="-14.75">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="33" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-14.928572">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="22" column="33" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.01681416">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/winner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="44" selection-start="15352" selection-end="15352" vertical-scroll-proportion="-16.785715">
-          <folding>
-            <marker date="1392027114000" expanded="true" signature="9549:9603" placeholder="..." />
-          </folding>
+        <state line="248" column="58" selection-start="18341" selection-end="18341" vertical-scroll-proportion="0.01681416">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sinasdk/saetv2.ex.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="569" column="20" selection-start="14642" selection-end="14642" vertical-scroll-proportion="0.01681416">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../theruges/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="13" selection-start="4693" selection-end="4693" vertical-scroll-proportion="302.32144">
+        <state line="98" column="13" selection-start="4693" selection-end="4693" vertical-scroll-proportion="0.01681416">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="-2.2580926">
+        <state line="216" column="44" selection-start="15352" selection-end="15352" vertical-scroll-proportion="0.01681416">
+          <folding>
+            <marker date="1392027114000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="139" selection-start="9403" selection-end="9403" vertical-scroll-proportion="0.40932643">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="35" selection-start="1824" selection-end="1824" vertical-scroll-proportion="0.5091863">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/views/admin/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="580" selection-end="580" vertical-scroll-proportion="-7.464286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/views/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="571" selection-end="571" vertical-scroll-proportion="-9.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/winner/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="60" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-21.714285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/winner/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="336" column="39" selection-start="13126" selection-end="13126" vertical-scroll-proportion="0.3347566">
           <folding />
         </state>
       </provider>
