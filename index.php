@@ -1933,8 +1933,8 @@
           <li class="symj_nav3"><a href="winner.html">中奖名单</a></li>
         </ul>
       </div>
-      <a class="symj_home_btn1 symj_btn sysj_display_pc" target="_blank" href="http://huati.weibo.com/794066"></a>
-      <a class="symj_home_btn1 symj_btn sysj_display_mobile" target="_blank" href="http://s.weibo.com/weibo/水漾美肌?nodup=1&Refer=huati"></a>
+      <a class="symj_home_btn1 symj_btn sysj_display_pc" target="_blank" href="http://weibo.com"></a>
+      <a class="symj_home_btn1 symj_btn sysj_display_mobile" target="_blank" href="http://weibo.com"></a>
       <a class="symj_home_btn2 symj_btn" href="winner.html"></a>
     </div>
     <div class="symj_box2 symj_list_box">

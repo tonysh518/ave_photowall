@@ -363,22 +363,29 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
 
     LP.action('winner_list', function(){
         api.ajax('winnerList', function( result ){
-            var thismonth = result.data.slice(0,1);
-            thismonth[0].detail.sharecontent = encodeURI(thismonth[0].detail.content).replace(new RegExp('#',"gm"),'%23');
-            LP.compile( 'winner-thismonth-template' , thismonth[0] , function( html ){
-                $('.symj_winner_this_month').append(html).data('winner', thismonth[0]);
-                //get counts
-                api.ajax('getcounts', {id:thismonth[0].mid}, function( result ){
-                    if(result.success) {
-                        $('.symj_winner_repost_count').html(result.data[0].reposts);
-                    }
+            if(result.data.length > 0) {
+                var thismonth = result.data.slice(0,1);
+                if( thismonth[0].detail != undefined) {
+                    thismonth[0].detail.sharecontent = encodeURI(thismonth[0].detail.content).replace(new RegExp('#',"gm"),'%23');
+                    LP.compile( 'winner-thismonth-template' , thismonth[0] , function( html ){
+                        $('.symj_winner_this_month').append(html).data('winner', thismonth[0]);
+                        //get counts
+                        api.ajax('getcounts', {id:thismonth[0].mid}, function( result ){
+                            if(result.success) {
+                                $('.symj_winner_repost_count').html(result.data[0].reposts);
+                            }
+                        });
+                    });
+                }
+                var othermonth = {};
+                othermonth.winners = result.data.slice(1);
+                LP.compile( 'winner-othermonth-template' , othermonth , function( html ){
+                    $('.symj_winner_list').append(html);
                 });
-            });
-            var othermonth = {};
-            othermonth.winners = result.data.slice(1);
-            LP.compile( 'winner-othermonth-template' , othermonth , function( html ){
-                $('.symj_winner_list').append(html);
-            });
+            }
+            else {
+                $('.symj_winner_list').css({'border':'none'}).html('<br />第一期中奖名单将于2014年3月第一周公布于@雅漾 新浪官方微博与本网站，敬请关注！<br /><br /><br />');
+            }
         });
     });
 

@@ -2,34 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83767be6-7aa8-4538-b8d9-26f38287270a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/views/admin/weibologin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/btn_join.gif" afterPath="$PROJECT_DIR$/img/btn_join.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/btn_share.png" afterPath="$PROJECT_DIR$/img/btn_share.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/rule1.gif" afterPath="$PROJECT_DIR$/img/rule1.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/m/rule1.gif" afterPath="$PROJECT_DIR$/img/m/rule1.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/AdminController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/PhotoController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/PhotoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/models/Winner.php" afterPath="$PROJECT_DIR$/api/protected/models/Winner.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/WinnerController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/WinnerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/admin_asset/css/admin.css" afterPath="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/admin_asset/js/app.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/runtime/application.log" afterPath="$PROJECT_DIR$/api/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/topbanner.jpg" afterPath="$PROJECT_DIR$/img/topbanner.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/m/topbanner.jpg" afterPath="$PROJECT_DIR$/img/m/topbanner.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/views/admin/index.php" afterPath="$PROJECT_DIR$/api/protected/views/admin/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rule.html" afterPath="$PROJECT_DIR$/rule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/admin_asset/js/services.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winner.html" afterPath="$PROJECT_DIR$/winner.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ave_photowall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392081781155" ignored="false" />
+    <file path="/Dummy.txt" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392618802313" ignored="false" />
     <file path="/PhotoController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392274501857" ignored="false" />
-    <file path="/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392285825698" ignored="false" />
-    <file path="/a.dummy" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391491236362" ignored="false" />
+    <file path="/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393214312610" ignored="false" />
+    <file path="/a.dummy" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392986899692" ignored="false" />
     <file path="/Photo.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392260251099" ignored="false" />
     <file path="/index.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392277531093" ignored="false" />
     <file path="$PROJECT_DIR$/api/framework/cli/views/webapp/protected/views/layouts/main.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391507365346" ignored="false" />
@@ -38,57 +24,57 @@
     <file path="/rule.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392023127229" ignored="false" />
     <file path="/winner.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392277715007" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/web/css/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391516409921" ignored="false" />
-    <file path="/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392256862582" ignored="false" />
+    <file path="/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393211679809" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/web/login.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391515697680" ignored="false" />
     <file path="/login.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391515697266" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/static/js/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391526499591" ignored="false" />
-    <file path="/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392284175103" ignored="false" />
+    <file path="/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392882229184" ignored="false" />
     <file path="/WinnerController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392275136297" ignored="false" />
-    <file path="/api.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391834049198" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392271892670" ignored="false" />
+    <file path="/api.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393145202963" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393241745210" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/static/js/lp.core.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391567135498" ignored="false" />
     <file path="/scarf.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391573296971" ignored="false" />
-    <file path="/controllers.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391844938348" ignored="false" />
+    <file path="/controllers.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392885639886" ignored="false" />
     <file path="/admin.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391567622274" ignored="false" />
-    <file path="/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392289545175" ignored="false" />
+    <file path="/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247542803" ignored="false" />
     <file path="/*.regexp" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391784830775" ignored="false" />
-    <file path="/list.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391851915297" ignored="false" />
-    <file path="/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392190263613" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392286957737" ignored="false" />
-    <file path="/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392190622962" ignored="false" />
+    <file path="/list.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247756729" ignored="false" />
+    <file path="/NodeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393241744558" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393209121040" ignored="false" />
+    <file path="/NodeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393209084783" ignored="false" />
     <file path="/filters.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391844470301" ignored="false" />
-    <file path="/admin.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391851943979" ignored="false" />
+    <file path="/admin.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247297014" ignored="false" />
     <file path="/photo.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391781642697" ignored="false" />
     <file path="/UserIdentity.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391654275206" ignored="false" />
-    <file path="/AdminController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392281788843" ignored="false" />
+    <file path="/AdminController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393225365915" ignored="false" />
     <file path="/style_ie6.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391588450631" ignored="false" />
-    <file path="/directives.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391847363843" ignored="false" />
+    <file path="/directives.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247467969" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/sso.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391614277359" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392286453080" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/UserController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393230424391" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391652336683" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/simplesamlphp/config/config.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391614524854" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/config/config.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391702877283" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/config/config.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393151370382" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/sso.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391615226937" ignored="false" />
-    <file path="/config.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391615649409" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/config/main.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391616869694" ignored="false" />
+    <file path="/config.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392965527740" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/config/main.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393139651539" ignored="false" />
     <file path="/main.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391616769430" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/UserAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391696343942" ignored="false" />
-    <file path="/UserAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391696295804" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/UserAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393225065428" ignored="false" />
+    <file path="/UserAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393150111495" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/components/UserIdentity.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391654717879" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/.htaccess" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391692891682" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/.htaccess" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393227776074" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/index.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391691650114" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/js/api.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392183957691" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/js/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392287440007" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/css/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392271893736" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/api.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393151370382" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/lp.base.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393135851858" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/css/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393215154251" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/CountryController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392175128162" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/FlagController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391658974403" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/UploadsController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392175128162" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/FlagAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659000604" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/FlagController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393221861405" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/UploadsController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392806738471" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/FlagAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393240529765" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/LoginForm.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659004025" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/LikeAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659020556" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/CountryAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659024192" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/TagController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391659053462" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392104307770" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393139118036" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/tool/php2po.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391663339196" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/tool/string.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391667450429" ignored="false" />
     <file path="/string.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391667431698" ignored="false" />
@@ -99,40 +85,119 @@
     <file path="$PROJECT_DIR$/../bank_wall/i18.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391668872259" ignored="false" />
     <file path="/i18.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391668868558" ignored="false" />
     <file path="/en.po" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392100383816" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/include/tpl.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392286854882" ignored="false" />
-    <file path="/.htaccess" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391692891682" ignored="false" />
-    <file path="/tpl.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392286741314" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393151370382" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/include/tpl.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393135851858" ignored="false" />
+    <file path="/.htaccess" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393227751147" ignored="false" />
+    <file path="/tpl.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392776435396" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/tool/en.json" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391695673360" ignored="false" />
     <file path="/post.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392091653207" ignored="false" />
     <file path="/winner.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1391851691719" ignored="false" />
     <file path="/saetv2.ex.class.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392020324830" ignored="false" />
     <file path="$PROJECT_DIR$/../PyGmail-master/gmail.py" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392014998838" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/avene_redness/0110/css/style.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392014286682" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/text.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392175128162" ignored="false" />
-    <file path="/text.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392110585348" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/text.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393208478051" ignored="false" />
+    <file path="/text.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393208478051" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/js/ie8.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
-    <file path="/login.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392091375883" ignored="false" />
+    <file path="/login.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393244015125" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/lang/en.po" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392175128162" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/lang/fr.po" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392100592260" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/lang/fr.json" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392100683819" ignored="false" />
-    <file path="/UploadsController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392113969945" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/lang/fr.po" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392359752728" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/lang/fr.json" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392359921000" ignored="false" />
+    <file path="/UploadsController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392794695997" ignored="false" />
     <file path="/CountryController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392105027450" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/json/country.json" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392105186690" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/js/plugin/jquery.mousewheel.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392186975244" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/plugin/jquery.mousewheel.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392362556654" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/PyGmail/run.sh" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
     <file path="/run.sh" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392191093266" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.3" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.2" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.4" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.5" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.3" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392372059510" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.2" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392372059510" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.4" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392372059510" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/runtime/application.log.5" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392372059510" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/protected/views/user/post.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392255996167" ignored="false" />
     <file path="/post.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392210922183" ignored="false" />
     <file path="/ie8.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392211090125" ignored="false" />
     <file path="/Winner.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392275053167" ignored="false" />
     <file path="/weibologin.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392281963008" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/css/video-js.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392287351250" ignored="false" />
-    <file path="/video-js.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392287298183" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/css/video-js.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392601332357" ignored="false" />
+    <file path="/video-js.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392370103604" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/test.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392806738471" ignored="false" />
+    <file path="/test.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392346174940" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/PyGmail/gmail.py" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393135851858" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/components/PhpAuthManager.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392353231739" ignored="false" />
+    <file path="/PhpAuthManager.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392353184587" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/plugin/jquery.jscrollpane.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392364857327" ignored="false" />
+    <file path="/jquery.jscrollpane.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392364853681" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/lp.base-m.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393135851858" ignored="false" />
+    <file path="/lp.base-m.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392882351876" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/include/tpl_mobile.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392806738471" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/m/css/layout.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393211682423" ignored="false" />
+    <file path="/tpl_mobile.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392719830860" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/m/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393211301198" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/m/css/animation.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392705703244" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/css/animation.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392705699580" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/TagAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392712307975" ignored="false" />
+    <file path="/TagAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392712284038" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/m/css/needtocombine.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392780452941" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/upstudios/css/responsive.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392790675596" ignored="false" />
+    <file path="/responsive.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392790673297" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/upstudios/portfolio.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392790896465" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/upstudios/css/main.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392792021122" ignored="false" />
+    <file path="/main.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392792020099" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/css/admin.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247300844" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/services/comment.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247047131" ignored="false" />
+    <file path="/comment.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393249444958" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/controllers/comment.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393250393202" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/controllers/node.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393250368167" ignored="false" />
+    <file path="/node.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393250225361" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/CommentController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393246857163" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/tmp/comment/list.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247761397" ignored="false" />
+    <file path="/CommentController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393246836803" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/CommentAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393224063675" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/views/admin/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247542803" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/mvipx/wp-content/themes/twentythirteen/index.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392874134389" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/mvipx/wp-content/themes/twentythirteen/css/style-responsive.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392874216935" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/mvipx/wp-content/themes/twentythirteen/css/style.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392879744307" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/tmp/node/list.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247773216" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/directives.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247632362" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/services/user.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393229318705" ignored="false" />
+    <file path="/user.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392885687032" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/controllers.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393220560827" ignored="false" />
+    <file path="$USER_HOME$/Downloads/www.loropiana.com/weibo/index.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392966339156" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/metadata/saml20-idp-remote.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393151370382" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/lib/SAML2/Response.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392968791560" ignored="false" />
+    <file path="/Response.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392968643518" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/modules/saml/lib/Auth/Source/SP.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392997992109" ignored="false" />
+    <file path="/SP.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392969041670" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/config/authsources.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393224602762" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/metadata/saml20-sp-remote.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1392997992109" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/PyGmail/gmail.live.py" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393135851858" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/api-m.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393151370382" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/components/Controller.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393205962399" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/README.md" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393139390950" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/js/config.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393151370382" ignored="false" />
+    <file path="/config.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393148186335" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/simplesamlphp/cert/server.crt" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393149267830" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/LikeController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393210708073" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/views/admin/login.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393244220401" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/app.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393240221836" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/tmp/node/list-flag.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393215005527" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/services/node.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393241970090" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/tmp/comment/list-flag.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393216377382" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/services/settings.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393221648118" ignored="false" />
+    <file path="/FlagAR.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393240515497" ignored="false" />
+    <file path="/FlagController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393221838022" ignored="false" />
+    <file path="/settings.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393221944434" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/controllers/settings.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393221944911" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/tmp/settings/list.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393247125433" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/sgadmin.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393225186957" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/services.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393222180677" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/admin.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393225211578" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/AdminController.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393229421302" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/404.html" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393227430805" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/services/like.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393229326427" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/services/flag.js" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393229345769" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/css/bootstrap.min.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393243020972" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/views/layouts/admin.php" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393243065318" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/css/bootstrap.css" changelist="83767be6-7aa8-4538-b8d9-26f38287270a" time="1393243249743" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,48 +220,10 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1936" column="59" selection-start="92399" selection-end="92418" vertical-scroll-proportion="-22.892857">
+            <state line="1941" column="28" selection-start="92635" selection-end="92635" vertical-scroll-proportion="-14.928572">
               <folding>
-                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#span#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#div#4;n#footer#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#span#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#span#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1392289654000" expanded="true" signature="9549:9603" placeholder="..." />
+                <marker date="1392618831000" expanded="true" signature="9549:9603" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="86" selection-start="9196" selection-end="9196" vertical-scroll-proportion="0.6070812">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -204,85 +231,34 @@
       <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/lp.base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="28" selection-start="2217" selection-end="2217" vertical-scroll-proportion="-10.269231">
+            <state line="22" column="13" selection-start="818" selection-end="818" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/photo/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2273" column="36" selection-start="134307" selection-end="134307" vertical-scroll-proportion="-9.821428">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#span#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#div#4;n#footer#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#span#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#span#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1392289661000" expanded="true" signature="9673:9731" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rule.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rule.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1940" column="128" selection-start="115022" selection-end="115022" vertical-scroll-proportion="-23.571428">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="5" selection-start="2600" selection-end="2600" vertical-scroll-proportion="-27.25">
+            <state line="34" column="18" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-23.071428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weibologin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/protected/views/admin/weibologin.php">
+      <file leaf-file-name="photo.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/photo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="-0.0">
+            <state line="13" column="13" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/protected/views/admin/index.php">
+      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/js/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="46" selection-start="928" selection-end="928" vertical-scroll-proportion="-17.642857">
+            <state line="97" column="0" selection-start="3218" selection-end="3218" vertical-scroll-proportion="0.6430401">
               <folding />
             </state>
           </provider>
@@ -291,10 +267,8 @@
       <file leaf-file-name="winner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/winner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2308" column="25" selection-start="136446" selection-end="136446" vertical-scroll-proportion="-6.428571">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="2339" column="10" selection-start="137853" selection-end="137853" vertical-scroll-proportion="-13.892858">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -302,7 +276,16 @@
       <file leaf-file-name="admin.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="37" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
+            <state line="52" column="31" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1935" column="0" selection-start="114739" selection-end="114739" vertical-scroll-proportion="-21.071428">
               <folding />
             </state>
           </provider>
@@ -336,12 +319,12 @@
         <option value="$PROJECT_DIR$/api/protected/controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/api/protected/views/admin/weibologin.php" />
         <option value="$PROJECT_DIR$/api/protected/views/admin/index.php" />
-        <option value="$PROJECT_DIR$/winner.html" />
-        <option value="$PROJECT_DIR$/js/lp.base.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/rule.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/rule.html" />
+        <option value="$PROJECT_DIR$/js/lp.base.js" />
+        <option value="$PROJECT_DIR$/winner.html" />
       </list>
     </option>
   </component>
@@ -402,6 +385,156 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="avene_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ave_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avene_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ave_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avene_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ave_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avene_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ave_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avene_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ave_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avene_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ave_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avene_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ave_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avene_photowall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -471,13 +604,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2243" height="1319" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19344561" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19708693" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -553,180 +686,104 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="414" selection-end="414" vertical-scroll-proportion="-10.857142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/PhotoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="0" selection-start="5723" selection-end="5723" vertical-scroll-proportion="-15.607142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/models/Winner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="465" selection-end="465" vertical-scroll-proportion="-14.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/admin_asset/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="43" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/admin_asset/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="26" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/views/layouts/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.19947506">
+        <state line="12" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.19947506" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="33" selection-start="7668" selection-end="7668" vertical-scroll-proportion="0.082038">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="5" selection-start="2600" selection-end="2600" vertical-scroll-proportion="-27.25">
-          <folding />
-        </state>
+        <state line="110" column="5" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.66754156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/views/admin/weibologin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/views/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="928" selection-end="928" vertical-scroll-proportion="-17.642857">
+        <state line="26" column="46" selection-start="928" selection-end="928" vertical-scroll-proportion="0.43219596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2273" column="36" selection-start="134307" selection-end="134307" vertical-scroll-proportion="0.1761062">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1935" column="0" selection-start="114739" selection-end="114739" vertical-scroll-proportion="-21.071428">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/winner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2308" column="25" selection-start="136446" selection-end="136446" vertical-scroll-proportion="-6.428571">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="2339" column="10" selection-start="137853" selection-end="137853" vertical-scroll-proportion="-13.892858">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="28" selection-start="2217" selection-end="2217" vertical-scroll-proportion="-10.269231">
+        <state line="52" column="31" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1936" column="59" selection-start="92399" selection-end="92418" vertical-scroll-proportion="-22.892857">
+        <state line="1941" column="28" selection-start="92635" selection-end="92635" vertical-scroll-proportion="-14.928572">
           <folding>
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#4;n#footer#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#span#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1392289654000" expanded="true" signature="9549:9603" placeholder="..." />
+            <marker date="1392618831000" expanded="true" signature="9549:9603" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rule.html">
+    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1940" column="128" selection-start="115022" selection-end="115022" vertical-scroll-proportion="-23.571428">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="22" column="13" selection-start="818" selection-end="818" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/photo/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2273" column="36" selection-start="134307" selection-end="134307" vertical-scroll-proportion="-9.821428">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#3;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#4;n#footer#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#span#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1392289661000" expanded="true" signature="9673:9731" placeholder="..." />
-          </folding>
+        <state line="34" column="18" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-23.071428">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/photo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="86" selection-start="9196" selection-end="9196" vertical-scroll-proportion="0.6070812">
+        <state line="13" column="13" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="3218" selection-end="3218" vertical-scroll-proportion="0.6430401">
           <folding />
         </state>
       </provider>
