@@ -216,23 +216,23 @@ class PhotoController extends Controller
 
 
 	public function actionFetch() {
-    set_time_limit(0);
+		set_time_limit(0);
 		$adminUid = Yii::app()->params['adminWeiboUid'];
 		$adminUser = User::model()->findByAttributes(array('sns_uid'=>$adminUid));
 		$access_token = $adminUser->access_token;
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
-    $contents = $c->search_topics("#水漾美肌#");
+		$contents = $c->search_topics("#水漾美肌#");
 		if(isset($contents['error_code'])){
 			echo "The weibo access token is expired, please login again in back office.";
 			return;
 		}
-    if(isset($contents['statuses'])) {
-      Photo::model()->fetchContents($contents['statuses']);
-      echo "Finished :)";
-    }
-    else {
-      echo "Sina API is busy, please try later.";
-    }
+		if(isset($contents['statuses'])) {
+			Photo::model()->fetchContents($contents['statuses']);
+			echo "Finished :)";
+		}
+		else {
+			echo "Sina API is busy, please try later.";
+		}
 	}
 
   public function actionGetCounts()
