@@ -67,13 +67,13 @@
 			<div class="symj_nav">
 				<ul>
 					<li class="symj_nav1 active"><a href="./">首页</a></li>
-					<li class="symj_nav2"><a href="rule.html">活动规则</a></li>
-					<li class="symj_nav3"><a href="winner.html">中奖名单</a></li>
+					<li class="symj_nav2"><a href="rule.php">活动规则</a></li>
+					<li class="symj_nav3"><a href="winner.php">中奖名单</a></li>
 				</ul>
 			</div>
 			<a class="symj_home_btn1 symj_btn sysj_display_pc" target="_blank" href="http://huati.weibo.com/794066"></a>
 			<a class="symj_home_btn1 symj_btn sysj_display_mobile" target="_blank" href="http://m.weibo.cn/p/10080821e315462659948c83fa1e48f45b8c1a?from=523&containerid=10080821e315462659948c83fa1e48f45b8c1a&vt=4"></a>
-			<a class="symj_home_btn2 symj_btn" href="winner.html"></a>
+			<a class="symj_home_btn2 symj_btn" href="winner.php"></a>
 		</div>
 		<div class="symj_box2 symj_list_box">
 			<div class="symj_box2_border">

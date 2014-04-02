@@ -70,8 +70,8 @@ $region_bottom = $html->find('div[class=region-bottom]',0)->outertext;
                 <div class="symj_nav">
                     <ul>
                         <li class="symj_nav1"><a href="./">首页</a></li>
-                        <li class="symj_nav2 active"><a href="rule.html">活动规则</a></li>
-                        <li class="symj_nav3"><a href="winner.html">中奖名单</a></li>
+                        <li class="symj_nav2 active"><a href="rule.php">活动规则</a></li>
+                        <li class="symj_nav3"><a href="winner.php">中奖名单</a></li>
                     </ul>
                 </div>
                 <div class="symj_rule1"></div>
